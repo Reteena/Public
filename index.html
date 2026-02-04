@@ -14,21 +14,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="margin-top: 40px;">
+  <!-- NeurIPS Banner - Simple inline approach -->
+  <div style="position: fixed; top: 0; left: 0; right: 0; width: 100%; background: #000; color: #fff; z-index: 99999; padding: 10px 20px; text-align: center; font-size: 14px; font-family: 'Manrope', Arial, sans-serif;">
+    We're excited to announce our paper has been published at NeurIPS 2025
+    <button onclick="this.parentElement.remove(); document.body.style.marginTop='0';" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #fff; font-size: 24px; cursor: pointer; padding: 0; line-height: 1;">×</button>
+  </div>
+
   <svg style="display:none;">
     <filter id="distortion">
       <feTurbulence type="turbulence" baseFrequency="0.01 0.1" numOctaves="1" result="turbulence"/>
       <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="8" xChannelSelector="R" yChannelSelector="G"/>
     </filter>
   </svg>
-
-  <!-- NeurIPS Announcement Banner -->
-  <div id="neuripsAnnouncement" class="announcement-banner">
-    <div class="announcement-content">
-      <span class="announcement-text">We're excited to announce our paper has been published at NeurIPS 2025</span>
-      <button class="announcement-close" onclick="closeAnnouncement()" aria-label="Close announcement">×</button>
-    </div>
-  </div>
 
   <!-- PDF Modal Overlay -->
   <div id="pdfModal" class="pdf-modal">
@@ -45,7 +43,7 @@
   </div>
 
   <div class="frame">
-    <header id="header" class="header">
+    <header id="header" class="header" style="top: 40px;">
       <div class="header-container">
         <div class="glass-container">
           <div class="glass-effect-backdrop"></div>
@@ -310,32 +308,6 @@
   </script>
 
   <script>
-    // Close announcement banner
-    function closeAnnouncement() {
-      const banner = document.getElementById('neuripsAnnouncement');
-      banner.style.animation = 'slideOut 0.3s ease-out forwards';
-      setTimeout(() => {
-        banner.style.display = 'none';
-        document.body.classList.add('banner-closed');
-        // Save to localStorage so it stays closed
-        try {
-          localStorage.setItem('neuripsAnnouncementClosed', 'true');
-        } catch(e) {
-          console.log('localStorage not available');
-        }
-      }, 300);
-    }
-
-    // Check if banner was previously closed
-    try {
-      if (localStorage.getItem('neuripsAnnouncementClosed') === 'true') {
-        document.getElementById('neuripsAnnouncement').style.display = 'none';
-        document.body.classList.add('banner-closed');
-      }
-    } catch(e) {
-      // localStorage not available, banner will show
-    }
-
     // Add scroll effect for header
     window.addEventListener('scroll', function() {
       const header = document.getElementById('header');
