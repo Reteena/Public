@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuroMorphLite-fMRI - Reteena</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg style="display:none;">
+    <filter id="distortion">
+      <feTurbulence type="turbulence" baseFrequency="0.01 0.1" numOctaves="1" result="turbulence"/>
+      <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
+  <div class="frame">
+    <header id="header" class="header">
+      <div class="header-container">
+        <div class="glass-container">
+          <div class="glass-effect-backdrop"></div>
+          <div class="glass-effect top"></div>
+          <div class="glass-effect bottom"></div>
+          <div class="glass-effect left"></div>
+          <div class="glass-effect right"></div>
+        </div>
+        <div class="header-content">
+          <a href="index.html" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
+          <div style="flex: 1;"></div>
+          <a href="https://www.linkedin.com/company/reteena" target="_blank" class="linkedin-link" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Reteena" target="_blank" class="github-link" aria-label="GitHub">
+            <svg height="15" viewBox="0 0 16 16" fill="#222" style="vertical-align: middle;"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68.003 1.37.092 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    <main class="blog-main">
+      <article class="blog-article">
+        <div class="blog-header-image">
+          <img src="image5.png" alt="NeuroMorphLite-fMRI">
+        </div>
+        
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-category">Neuroimaging & Reinforcement Learning</span>
+            <span class="blog-date">Project 05</span>
+          </div>
+          
+          <h1 class="blog-title">NeuroMorphLite-fMRI</h1>
+          
+          <div class="tags small-tags" style="margin-bottom: 32px;">
+            <span class="tag">neuroimaging</span>
+            <span class="tag">morphology</span>
+            <span class="tag">3D-analysis</span>
+          </div>
+
+          <div class="blog-body">
+            <h2>Bridging Deep Learning and Reinforcement Learning</h2>
+            <p>NeuroMorphLite-fMRI represents a novel approach to fMRI-based Alzheimer's research by merging deep learning reconstruction with reinforcement learning optimization. This hybrid approach tackles two critical challenges simultaneously: producing high-quality brain reconstructions and identifying the most diagnostically relevant brain regions.</p>
+
+            <h2>Low Computational Demands</h2>
+            <p>Despite its sophisticated architecture, NeuroMorphLite-fMRI is designed with computational efficiency in mind. This makes advanced neuroimaging analysis accessible to researchers and clinicians who may not have access to high-performance computing clusters, democratizing access to cutting-edge diagnostic tools.</p>
+
+            <h2>Built on Robust Datasets</h2>
+            <p>The framework is built and validated using two of the most comprehensive Alzheimer's neuroimaging datasets available:</p>
+
+            <ul>
+              <li><strong>ADNI (Alzheimer's Disease Neuroimaging Initiative):</strong> A longitudinal study providing extensive multi-modal imaging and clinical data.</li>
+              <li><strong>OASIS (Open Access Series of Imaging Studies):</strong> A freely available collection of MRI datasets across various stages of cognitive decline.</li>
+            </ul>
+
+            <p>Training on these diverse, high-quality datasets ensures the framework's reliability across different patient populations and imaging protocols.</p>
+
+            <h2>Dual Backbone Architecture</h2>
+            <p>NeuroMorphLite-fMRI employs both CNN (Convolutional Neural Network) and Transformer backbones to achieve high-fidelity brain reconstruction:</p>
+
+            <ul>
+              <li><strong>CNN backbone:</strong> Excels at capturing local spatial patterns and anatomical structures in the 3D brain volume.</li>
+              <li><strong>Transformer backbone:</strong> Captures long-range dependencies and global context across different brain regions.</li>
+            </ul>
+
+            <p>This combination ensures that both fine-grained anatomical details and broader structural patterns are preserved in the reconstructions.</p>
+
+            <h2>Reinforcement Learning Optimization</h2>
+            <p>The reinforcement learning component serves a dual purpose:</p>
+
+            <h3>1. Regularization Optimization</h3>
+            <p>The RL agent learns optimal regularization strategies during reconstruction, balancing image quality with computational efficiency. Rather than using fixed hyperparameters, the system adaptively adjusts its approach based on the specific characteristics of each scan.</p>
+
+            <h3>2. Region Importance Discovery</h3>
+            <p>Perhaps most importantly, the RL agent identifies which brain regions are most critical for Alzheimer's diagnosis. It has successfully highlighted key structures like the hippocampus—known to be among the earliest and most severely affected regions in Alzheimer's disease—without being explicitly programmed to look for them.</p>
+
+            <h2>Clinical Relevance</h2>
+            <p>By automatically identifying diagnostically important regions, NeuroMorphLite-fMRI can:</p>
+
+            <ul>
+              <li>Guide radiologists to focus on the most relevant areas during image review</li>
+              <li>Provide quantitative measures of atrophy in critical regions</li>
+              <li>Track disease progression by monitoring changes in identified regions over time</li>
+              <li>Support early detection by highlighting subtle changes in key structures</li>
+            </ul>
+
+            <h2>Balancing Multiple Objectives</h2>
+            <p>The unique strength of NeuroMorphLite-fMRI lies in its ability to optimize for both image reconstruction quality and diagnostic accuracy simultaneously. Traditional approaches often treat these as separate problems, but our integrated framework ensures that the reconstruction process itself is guided by diagnostic relevance.</p>
+
+            <h2>Future Directions</h2>
+            <p>We're continuing to refine the framework, exploring applications beyond Alzheimer's disease to other neurodegenerative conditions and investigating how the learned importance maps might provide insights into disease mechanisms and progression patterns.</p>
+
+            <div class="blog-cta">
+              <a href="index.html" class="button-11 secondary">
+                ← Back to Projects
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    
+    <div class="footer-section">
+      <img src="footer.png" alt="Reteena footer" class="footer-image">
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
