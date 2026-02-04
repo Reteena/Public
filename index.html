@@ -51,12 +51,12 @@
     <main>
       <!-- Hero Section - Visible on Load -->
       <section class="hero-section">
-        <h1 class="hero-title">Healthy Longevity with<br>Dignity and Identity</h1>
+        <h1 class="hero-title fade-in">Healthy Longevity with<br>Dignity and Identity</h1>
       </section>
       
       <!-- Content Section - Visible on Scroll -->
       <section class="content-section">
-        <section class="intro">
+        <section class="intro scroll-fade">
           <p class="subtitle">Reteena is an applied ai lab focused on creating human-friendly<br>solutions that enable more accessible alzheimer's diagnosis and therapy</p>
           
           <div class="supports-section">
@@ -72,9 +72,9 @@
           </div>
         </section>
         
-        <hr class="divider" />
+        <hr class="divider scroll-fade" />
         
-        <section class="project">
+        <section class="project scroll-fade">
           <img src="image1.png" alt="Remembrance project illustration">
           
           <span class="project-index">01</span>
@@ -93,9 +93,9 @@
           </div>
         </section>
         
-        <hr class="divider" />
+        <hr class="divider scroll-fade" />
         
-        <section class="project">
+        <section class="project scroll-fade">
           <img src="image2.png" alt="Clarity Open Source project illustration">
           
           <span class="project-index">02</span>
@@ -105,7 +105,7 @@
           </div>
           
           <p class="project-description">
-            Enhances low-field MRI scans for Alzheimer’s diagnosis using deep learning-based brain segmentation and volumetric analysis. By enabling 96% diagnostic accuracy on affordable, low-strength scanners, the framework provides a faster, cost-effective alternative to conventional high-field MRI while preserving clinically meaningful structural information for early and accessible neurodegenerative assessment.
+            Enhances low-field MRI scans for Alzheimer's diagnosis using deep learning-based brain segmentation and volumetric analysis. By enabling 96% diagnostic accuracy on affordable, low-strength scanners, the framework provides a faster, cost-effective alternative to conventional high-field MRI while preserving clinically meaningful structural information for early and accessible neurodegenerative assessment.
           </p>
           
           <div class="project-footer">
@@ -114,9 +114,9 @@
           </div>
         </section>
 
-        <hr class="divider" />
+        <hr class="divider scroll-fade" />
         
-        <section class="project">
+        <section class="project scroll-fade">
           <img src="image4.png" alt="GeneAttentionNet project illustration">
           
           <span class="project-index">03</span>
@@ -135,9 +135,9 @@
           </div>
         </section>
         
-        <hr class="divider" />
+        <hr class="divider scroll-fade" />
         
-        <section class="project">
+        <section class="project scroll-fade">
           <img src="image3.png" alt="SALSA project illustration">
           
           <span class="project-index">04</span>
@@ -147,7 +147,7 @@
           </div>
           
           <p class="project-description">
-            GeneAttentionNet is an interpretable, biologically informed neural architecture for Alzheimer’s classification from gene expression data. Using attention-based tokenization, pathway gating, and protein-interaction–masked heads, it captures gene-level context, improving accuracy over baselines while enabling trustworthy, mechanism-aware predictions for transcriptomic disease modeling and biomedical research.
+            GeneAttentionNet is an interpretable, biologically informed neural architecture for Alzheimer's classification from gene expression data. Using attention-based tokenization, pathway gating, and protein-interaction–masked heads, it captures gene-level context, improving accuracy over baselines while enabling trustworthy, mechanism-aware predictions for transcriptomic disease modeling and biomedical research.
           </p>
           
           <div class="project-footer">
@@ -156,9 +156,9 @@
           </div>
         </section>
 
-        <hr class="divider" />
+        <hr class="divider scroll-fade" />
         
-        <section class="project">
+        <section class="project scroll-fade">
           <img src="image5.png" alt="NeuroMorph project illustration">
           
           <span class="project-index">05</span>
@@ -175,7 +175,7 @@
           </div>
         </section>
         
-        <div class="footer-section">
+        <div class="footer-section scroll-fade">
           <img src="footer.png" alt="Reteena footer" class="footer-image">
         </div>
       </section>
@@ -207,6 +207,26 @@
       } else {
         header.classList.remove('scrolled');
       }
+    });
+
+    // Scroll animation observer
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all elements with scroll-fade class
+    document.addEventListener('DOMContentLoaded', () => {
+      const scrollElements = document.querySelectorAll('.scroll-fade');
+      scrollElements.forEach(el => observer.observe(el));
     });
   </script>
 </body>
