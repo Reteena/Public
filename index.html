@@ -316,6 +316,7 @@
       banner.style.animation = 'slideOut 0.3s ease-out forwards';
       setTimeout(() => {
         banner.style.display = 'none';
+        document.body.classList.add('banner-closed');
         // Save to localStorage so it stays closed
         localStorage.setItem('neuripsAnnouncementClosed', 'true');
       }, 300);
@@ -326,6 +327,7 @@
       const banner = document.getElementById('neuripsAnnouncement');
       if (localStorage.getItem('neuripsAnnouncementClosed') === 'true') {
         banner.style.display = 'none';
+        document.body.classList.add('banner-closed');
       } else {
         banner.style.display = 'block';
       }
