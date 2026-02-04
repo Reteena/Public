@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -51,50 +51,100 @@
         
         <div class="blog-content">
           <div class="blog-meta">
-            <span class="blog-category">Medical Imaging & Deep Learning</span>
-            <span class="blog-date">Project 02</span>
+            <span class="blog-index">[02]</span>
+            <span class="blog-category">MEDICAL IMAGING & DEEP LEARNING</span>
           </div>
           
-          <h1 class="blog-title">Low Field MRI Framework (Clarity)</h1>
+          <h1 class="blog-title">Low Field MRI Framework</h1>
+          <p class="blog-subtitle">Clarity</p>
           
-          <div class="tags small-tags" style="margin-bottom: 32px;">
+          <div class="tags small-tags" style="margin-bottom: 40px;">
             <span class="tag">deep-learning</span>
             <span class="tag">image-segmentation</span>
             <span class="tag">open-source</span>
           </div>
 
-          <div class="blog-body">
-            <h2>The Challenge</h2>
-            <p>Traditional high-field MRI machines are expensive, require specialized facilities, and can be inaccessible to many communities, particularly in underserved areas. Low-field MRI offers a more affordable and accessible alternative, but the image quality has traditionally been insufficient for precise diagnostic purposes, particularly for conditions like Alzheimer's Disease that require detailed brain imaging.</p>
+          <div class="blog-lead">
+            Deep learning framework that enhances low-field MRI scans, making advanced neurological diagnosis accessible and affordable.
+          </div>
 
-            <h2>Our Solution</h2>
-            <p>Clarity is a deep learning framework that bridges this gap by enhancing low-field MRI scans to enable accurate segmentation of brain regions linked to Alzheimer's Disease. By leveraging advanced neural networks, we can extract clinically valuable information from lower-quality scans that would otherwise be difficult to interpret.</p>
-
-            <h2>Performance</h2>
-            <p>The framework achieved an impressive 96% accuracy in automatic Alzheimer's Disease diagnosis using volumetric data combined with ensemble machine learning models. This level of accuracy rivals that of traditional high-field MRI analysis, demonstrating that cost-effective alternatives can maintain diagnostic precision.</p>
-
-            <h2>Technical Approach</h2>
-            <p>Clarity employs state-of-the-art deep learning architectures specifically optimized for medical image segmentation. The system is trained to identify and segment key brain structures that are particularly affected by Alzheimer's Disease, including the hippocampus, entorhinal cortex, and other regions known to show early atrophy.</p>
-
-            <p>Our ensemble approach combines multiple models to ensure robust and reliable predictions, reducing the risk of false positives or negatives that could impact patient care.</p>
-
-            <h2>Impact & Accessibility</h2>
-            <p>This approach offers a cost-effective, faster alternative to traditional MRI for early Alzheimer's Disease detection. By making advanced diagnostic capabilities accessible through low-field MRI, we're helping to democratize access to quality neurological care.</p>
-
-            <p>The open-source nature of Clarity means that healthcare facilities worldwide can implement and adapt the framework to their specific needs, furthering our mission of making Alzheimer's diagnosis more accessible globally.</p>
-
-            <h2>Future Development</h2>
-            <p>We continue to refine the framework, expanding its capabilities to detect other neurological conditions and working to make it even more robust across different scanner types and imaging protocols.</p>
-
-            <div class="blog-cta">
-              <a href="https://ieeexplore.ieee.org/document/10826144" target="_blank" class="button-11">
-                Read Full Paper
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-              </a>
-              <a href="index.html" class="button-11 secondary">
-                ← Back to Projects
-              </a>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>Precise Segmentation</h3>
+              <p>Accurately segments brain regions linked to Alzheimer's including hippocampus and entorhinal cortex from low-quality scans.</p>
             </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h3>96% Accuracy</h3>
+              <p>Achieved exceptional diagnostic accuracy using volumetric data and ensemble ML models, rivaling high-field MRI.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <h3>Cost-Effective</h3>
+              <p>Low-field MRI machines are more affordable and accessible, especially for underserved communities worldwide.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3>Faster Scanning</h3>
+              <p>Reduced scan times improve patient comfort and enable higher throughput for diagnostic centers.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <h3>Open Source</h3>
+              <p>Framework is freely available for healthcare facilities to implement and adapt to their specific needs.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <h3>Ensemble Models</h3>
+              <p>Multiple neural networks combined for robust, reliable predictions that reduce diagnostic errors.</p>
+            </div>
+          </div>
+
+          <div class="impact-section">
+            <h2 class="section-title">Global Impact</h2>
+            <div class="impact-stats">
+              <div class="stat-card">
+                <div class="stat-value">Accessible</div>
+                <div class="stat-label">Bringing advanced diagnostics to underserved areas</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">Scalable</div>
+                <div class="stat-label">Open-source framework for global adoption</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">Reliable</div>
+                <div class="stat-label">Clinical-grade accuracy from affordable hardware</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-cta-section">
+            <a href="https://ieeexplore.ieee.org/document/10826144" target="_blank" class="cta-button primary">
+              <i class="fas fa-file-alt"></i>
+              Read Full Paper
+            </a>
+            <a href="index.html" class="cta-button secondary">
+              <i class="fas fa-arrow-left"></i>
+              Back to Projects
+            </a>
           </div>
         </div>
       </article>
@@ -113,6 +163,23 @@
       } else {
         header.classList.remove('scrolled');
       }
+    });
+
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.feature-card, .stat-card').forEach(el => {
+      observer.observe(el);
     });
   </script>
 </body>
