@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -51,72 +51,100 @@
         
         <div class="blog-content">
           <div class="blog-meta">
-            <span class="blog-category">Speech Analysis & AI</span>
-            <span class="blog-date">Project 04</span>
+            <span class="blog-index">[04]</span>
+            <span class="blog-category">SPEECH ANALYSIS & AI</span>
           </div>
           
           <h1 class="blog-title">SALSA</h1>
           <p class="blog-subtitle">Speech Analysis for Low-compute Systems with Accessibility</p>
           
-          <div class="tags small-tags" style="margin-bottom: 32px;">
+          <div class="tags small-tags" style="margin-bottom: 40px;">
             <span class="tag">speech-analysis</span>
             <span class="tag">low-compute</span>
             <span class="tag">accessible</span>
           </div>
 
-          <div class="blog-body">
-            <h2>Accessible Diagnosis Through Speech</h2>
-            <p>Speech patterns can reveal early signs of cognitive decline, offering a non-invasive and accessible method for Alzheimer's detection. However, most existing systems require expensive computational resources or specialized equipment, limiting their deployment in everyday clinical settings or at-home monitoring scenarios.</p>
+          <div class="blog-lead">
+            Lightweight framework for Alzheimer's detection from spontaneous speech, running efficiently on consumer hardware.
+          </div>
 
-            <h2>A Lightweight Approach</h2>
-            <p>SALSA (Speech Analysis for Low-compute Systems with Accessibility) is specifically designed to overcome these barriers. It's a lightweight framework that can detect Alzheimer's disease from spontaneous speech while running efficiently on consumer-grade hardware—making it practical for widespread deployment.</p>
-
-            <h2>Technical Architecture</h2>
-            <p>The framework employs an innovative approach using frozen pre-trained encoders combined with LoRA (Low-Rank Adaptation) adapters. This design choice offers several advantages:</p>
-
-            <ul>
-              <li><strong>Efficiency:</strong> By keeping the base encoders frozen, we dramatically reduce computational requirements during both training and inference.</li>
-              <li><strong>Multimodal analysis:</strong> SALSA combines acoustic embeddings with lexical cues, capturing both how someone speaks and what they say.</li>
-              <li><strong>Generalization:</strong> The architecture maintains strong performance across different datasets and recording conditions.</li>
-            </ul>
-
-            <h2>Strong Cross-Dataset Performance</h2>
-            <p>One of the critical challenges in medical AI is ensuring models work well beyond their training data. SALSA demonstrates strong cross-corpus performance on established benchmarks like ADReSS 2020, meaning it can generalize to new speakers, recording environments, and speech tasks without significant performance degradation.</p>
-
-            <p>This robustness is crucial for real-world deployment, where conditions may vary significantly from controlled research settings.</p>
-
-            <h2>Acoustic and Lexical Features</h2>
-            <p>SALSA's dual approach captures complementary aspects of speech:</p>
-
-            <ul>
-              <li><strong>Acoustic features:</strong> Voice quality, rhythm, pauses, and prosody that may indicate cognitive processing difficulties.</li>
-              <li><strong>Lexical features:</strong> Word choice, semantic content, and linguistic patterns that can reveal memory or language difficulties.</li>
-            </ul>
-
-            <p>By combining these modalities, SALSA achieves more reliable detection than systems relying on either aspect alone.</p>
-
-            <h2>Practical Deployment</h2>
-            <p>The framework's low computational requirements mean it can run on standard laptops, tablets, or even smartphones. This accessibility opens up possibilities for:</p>
-
-            <ul>
-              <li>Regular at-home monitoring for early detection</li>
-              <li>Deployment in primary care settings without specialized equipment</li>
-              <li>Use in underserved communities with limited access to advanced diagnostic tools</li>
-              <li>Scalable screening programs for at-risk populations</li>
-            </ul>
-
-            <h2>Privacy-Conscious Design</h2>
-            <p>Since SALSA can run locally on consumer hardware, it enables privacy-preserving deployment where sensitive speech data never needs to leave the user's device—an important consideration for healthcare applications.</p>
-
-            <div class="blog-cta">
-              <a href="https://docs.google.com/document/d/1e5-_163SnkGZ1GXYd_iXDWY_8WIarjLE0BBSfVpKAUQ/edit?usp=sharing" target="_blank" class="button-11">
-                Read Technical Details
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-              </a>
-              <a href="index.html" class="button-11 secondary">
-                ← Back to Projects
-              </a>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-microphone"></i>
+              </div>
+              <h3>Acoustic Analysis</h3>
+              <p>Captures voice quality, rhythm, pauses, and prosody that may indicate cognitive processing difficulties.</p>
             </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <h3>Lexical Features</h3>
+              <p>Analyzes word choice, semantic content, and linguistic patterns revealing memory or language difficulties.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-laptop"></i>
+              </div>
+              <h3>Consumer Hardware</h3>
+              <p>Runs on standard laptops, tablets, or smartphones without requiring specialized equipment or cloud processing.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-plug"></i>
+              </div>
+              <h3>LoRA Adapters</h3>
+              <p>Efficient fine-tuning approach that dramatically reduces computational requirements while maintaining performance.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h3>Cross-Dataset Performance</h3>
+              <p>Strong generalization across different datasets and recording conditions, proven on ADReSS 2020 benchmark.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-user-shield"></i>
+              </div>
+              <h3>Privacy-Preserving</h3>
+              <p>Local processing means sensitive speech data never needs to leave the user's device.</p>
+            </div>
+          </div>
+
+          <div class="impact-section">
+            <h2 class="section-title">Deployment Potential</h2>
+            <div class="impact-stats">
+              <div class="stat-card">
+                <div class="stat-value">At-Home</div>
+                <div class="stat-label">Regular monitoring for early detection</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">Primary Care</div>
+                <div class="stat-label">No specialized equipment needed</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">Scalable</div>
+                <div class="stat-label">Screening programs for at-risk populations</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-cta-section">
+            <a href="https://docs.google.com/document/d/1e5-_163SnkGZ1GXYd_iXDWY_8WIarjLE0BBSfVpKAUQ/edit?usp=sharing" target="_blank" class="cta-button primary">
+              <i class="fas fa-file-alt"></i>
+              Read Technical Details
+            </a>
+            <a href="index.html" class="cta-button secondary">
+              <i class="fas fa-arrow-left"></i>
+              Back to Projects
+            </a>
           </div>
         </div>
       </article>
@@ -135,6 +163,23 @@
       } else {
         header.classList.remove('scrolled');
       }
+    });
+
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.feature-card, .stat-card').forEach(el => {
+      observer.observe(el);
     });
   </script>
 </body>
