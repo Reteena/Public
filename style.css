@@ -330,6 +330,22 @@ main {
   margin-right: auto;
 }
 
+.project img {
+  width: 100%;
+  height: auto;
+  background: none;
+  border: none;
+  margin-bottom: 32px;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+.project img:hover {
+  transform: scale(1.005);
+}
+
 .project-index {
   color: #999;
   display: block;
@@ -374,7 +390,7 @@ main {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 24px;
+  margin-bottom: 0;
 }
 
 .project-link {
@@ -404,22 +420,6 @@ main {
   font-size: 12px;
   color: #999;
 }
-
-.project img {
-  width: 100%;
-  height: auto;
-  background: none;
-  border: none;
-  margin-bottom: 0;
-  transition: transform 0.3s ease;
-  position: relative;
-  z-index: 1;
-}
-
-.project img:hover {
-  transform: scale(1.005);
-}
-
 
 /* Footer */
 .footer-section {
@@ -492,6 +492,10 @@ html {
 
   .project-title {
     font-size: 20px;
+  }
+
+  .project img {
+    margin-bottom: 24px;
   }
 }
 
