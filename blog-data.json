@@ -1,0 +1,284 @@
+{
+  "posts": [
+    {
+      "id": "self-driving-codebases",
+      "title": "Towards self-driving codebases",
+      "description": "We're making a part of our multi-agent research harness available to try today in preview.",
+      "category": "research",
+      "date": "Feb 5, 2026",
+      "author": "",
+      "toc": [
+        { "id": "introduction", "title": "Introduction to multi-agent systems" },
+        { "id": "architecture", "title": "Research harness architecture" },
+        { "id": "preview", "title": "Preview access" },
+        { "id": "results", "title": "Early results and findings" }
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "We're making a part of our multi-agent research harness available to try today in preview."
+        },
+        {
+          "type": "heading",
+          "id": "introduction",
+          "text": "Introduction to multi-agent systems"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for introduction section."
+        },
+        {
+          "type": "heading",
+          "id": "architecture",
+          "text": "Research harness architecture"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for architecture section."
+        },
+        {
+          "type": "heading",
+          "id": "preview",
+          "text": "Preview access"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for preview access section."
+        },
+        {
+          "type": "heading",
+          "id": "results",
+          "text": "Early results and findings"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for results section."
+        }
+      ]
+    },
+    {
+      "id": "indexing-codebases",
+      "title": "Securely indexing large codebases",
+      "description": "By securely reusing a teammate's existing index, we cut time-to-first-query from hours to seconds on the largest repos.",
+      "category": "research",
+      "date": "Jan 27, 2026",
+      "author": "Jeremy Stribling",
+      "toc": [
+        { "id": "building-index", "title": "Building the first index" },
+        { "id": "finding-index", "title": "Finding the best index to reuse" },
+        { "id": "proving-access", "title": "Proving access" },
+        { "id": "faster-onboarding", "title": "Faster onboarding" }
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Semantic search is one of the biggest drivers of agent performance. In our recent evaluation, it improved response accuracy by 12.5% on average, produced code changes that were more likely to be retained in codebases, and raised overall request satisfaction."
+        },
+        {
+          "type": "heading",
+          "id": "building-index",
+          "text": "Building the first index"
+        },
+        {
+          "type": "paragraph",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "type": "heading",
+          "id": "finding-index",
+          "text": "Finding the best index to reuse"
+        },
+        {
+          "type": "paragraph",
+          "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "type": "heading",
+          "id": "proving-access",
+          "text": "Proving access"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+        },
+        {
+          "type": "heading",
+          "id": "faster-onboarding",
+          "text": "Faster onboarding"
+        },
+        {
+          "type": "paragraph",
+          "text": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        }
+      ]
+    },
+    {
+      "id": "better-bugbot",
+      "title": "Building a better Bugbot",
+      "description": "How we used a custom AI-driven metric to systematically improve Bugbot.",
+      "category": "research",
+      "date": "Jan 15, 2026",
+      "author": "",
+      "toc": [
+        { "id": "custom-metrics", "title": "Developing custom AI-driven metrics" },
+        { "id": "improvements", "title": "Systematic improvements" },
+        { "id": "methodology", "title": "Methodology and approach" },
+        { "id": "future", "title": "Future directions" }
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "How we used a custom AI-driven metric to systematically improve Bugbot."
+        },
+        {
+          "type": "heading",
+          "id": "custom-metrics",
+          "text": "Developing custom AI-driven metrics"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for custom metrics section."
+        },
+        {
+          "type": "heading",
+          "id": "improvements",
+          "text": "Systematic improvements"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for improvements section."
+        },
+        {
+          "type": "heading",
+          "id": "methodology",
+          "text": "Methodology and approach"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for methodology section."
+        },
+        {
+          "type": "heading",
+          "id": "future",
+          "text": "Future directions"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for future directions section."
+        }
+      ]
+    },
+    {
+      "id": "autonomous-coding",
+      "title": "Scaling long-running autonomous coding",
+      "description": "We've been experimenting with running coding agents autonomously for weeks at a time.",
+      "category": "research",
+      "date": "Jan 14, 2026",
+      "author": "",
+      "toc": [
+        { "id": "experiments", "title": "Running week-long experiments" },
+        { "id": "challenges", "title": "Key challenges and solutions" },
+        { "id": "insights", "title": "Insights from autonomous operation" },
+        { "id": "scaling", "title": "Scaling considerations" }
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "We've been experimenting with running coding agents autonomously for weeks at a time."
+        },
+        {
+          "type": "heading",
+          "id": "experiments",
+          "text": "Running week-long experiments"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for experiments section."
+        },
+        {
+          "type": "heading",
+          "id": "challenges",
+          "text": "Key challenges and solutions"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for challenges section."
+        },
+        {
+          "type": "heading",
+          "id": "insights",
+          "text": "Insights from autonomous operation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for insights section."
+        },
+        {
+          "type": "heading",
+          "id": "scaling",
+          "text": "Scaling considerations"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for scaling section."
+        }
+      ]
+    },
+    {
+      "id": "dynamic-context",
+      "title": "Dynamic context discovery",
+      "description": "As models improve as agents, we've found success by providing fewer details up front, making it easier for the agent to pull relevant context on its own.",
+      "category": "product",
+      "date": "Jan 10, 2026",
+      "author": "",
+      "toc": [
+        { "id": "agent-improvements", "title": "How agents are improving" },
+        { "id": "context-strategy", "title": "Less upfront, more discovery" },
+        { "id": "implementation", "title": "Implementation approach" },
+        { "id": "results", "title": "Impact on performance" }
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "As models improve as agents, we've found success by providing fewer details up front, making it easier for the agent to pull relevant context on its own."
+        },
+        {
+          "type": "heading",
+          "id": "agent-improvements",
+          "text": "How agents are improving"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for agent improvements section."
+        },
+        {
+          "type": "heading",
+          "id": "context-strategy",
+          "text": "Less upfront, more discovery"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for context strategy section."
+        },
+        {
+          "type": "heading",
+          "id": "implementation",
+          "text": "Implementation approach"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for implementation section."
+        },
+        {
+          "type": "heading",
+          "id": "results",
+          "text": "Impact on performance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Content placeholder for results section."
+        }
+      ]
+    }
+  ]
+}
