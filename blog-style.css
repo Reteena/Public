@@ -12,12 +12,12 @@
 /* Sidebar */
 .blog-sidebar {
   position: sticky;
-  top: 160px;
+  top: 120px;
   height: fit-content;
 }
 
 .blog-main-title {
-  font-family: 'Manrope', Arial, sans-serif;
+  font-family: 'Inria Serif', serif;
   font-size: 48px;
   font-weight: 400;
   margin: 0 0 48px 0;
@@ -53,12 +53,17 @@
 /* Blog Content */
 .blog-content {
   max-width: 900px;
+  margin: 0 auto;
 }
 
 .blog-post {
   margin-bottom: 48px;
   padding-bottom: 48px;
   border-bottom: 1px solid #f0f0f0;
+}
+
+.blog-post:first-child {
+  margin-top: 0;
 }
 
 .blog-post:last-child {
