@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": "remembrance-ai-companion",
-      "title": "Remembrance: AI memory companion for Alzheimer's patients",
+      "title": "Remembrance AI memory companion for Alzheimer's patients",
       "description": "Most conventional interventions missed what patients and families actually grieve. The loss of shared moments together, inside jokes, and humorous nicknames.",
       "category": "product",
       "date": "Feb 5, 2026",
@@ -62,7 +62,7 @@
       "description": "We enhanced low-field MRI scans to achieve 96% diagnostic accuracy on affordable scanners, making early detection accessible.",
       "category": "research",
       "date": "Jan 27, 2026",
-      "author": "Aarav Minocha, Ivan Ma, Jainish Patel, Seungyong Yang",
+      "author": "Reteena Team",
       "toc": [
         { "id": "accessibility-problem", "title": "The accessibility problem" },
         { "id": "deep-learning-approach", "title": "Deep learning for low-field enhancement" },
@@ -114,11 +114,11 @@
     },
     {
       "id": "lark-multi-agent",
-      "title": "Lark: Biologically inspired decision-making for AI agents",
+      "title": "Lark biologically inspired decision-making for AI agents",
       "description": "We built a framework that combines LLM reasoning with evolutionary multi-agent systems to balance stakeholder trade-offs while staying compute-efficient.",
       "category": "research",
       "date": "Jan 15, 2026",
-      "author": "Dheeraj Chintapalli, Rikhil Tanugula, Sunkalp Chandra",
+      "author": "Reteena Team",
       "toc": [
         { "id": "multi-stakeholder-problem", "title": "The multi-stakeholder problem" },
         { "id": "biological-inspiration", "title": "Four mechanisms from biology" },
@@ -170,11 +170,11 @@
     },
     {
       "id": "geneattentionnet",
-      "title": "GeneAttentionNet: Attention-based Alzheimer's classification",
+      "title": "GeneAttentionNet attention-based Alzheimer's classification",
       "description": "We built a neural architecture that uses attention mechanisms to capture gene-level context for Alzheimer's disease classification from expression data.",
       "category": "research",
       "date": "Jan 10, 2026",
-      "author": "Sunkalp Chandra, Gautham Korrapati",
+      "author": "Reteena Team",
       "toc": [
         { "id": "gene-expression-challenge", "title": "The gene expression challenge" },
         { "id": "attention-architecture", "title": "Attention mechanisms for genes" },
@@ -226,11 +226,11 @@
     },
     {
       "id": "cortiforge-framework",
-      "title": "CortiForge: Reproducible cortical circuit modeling at scale",
+      "title": "CortiForge reproducible cortical circuit modeling at scale",
       "description": "We built an open-source framework for modeling cortical microcircuits that links spiking neural network simulations with experimental brain data.",
       "category": "research",
       "date": "Dec 20, 2025",
-      "author": "Sunkalp Chandra, Gautham Korrapati, Dheeraj Chintapalli, S. Yang, Saketh Satti, Jainish Patel",
+      "author": "Reteena Team",
       "toc": [
         { "id": "validation-gap", "title": "The experimental validation gap" },
         { "id": "framework-design", "title": "End-to-end validation workflow" },
