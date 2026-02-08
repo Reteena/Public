@@ -214,35 +214,22 @@ html {
   color: #000;
 }
 
-.social-links {
+.nav-links {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 24px;
 }
 
-.github-link,
-.linkedin-link {
-  display: flex;
-  align-items: center;
+.nav-link {
   text-decoration: none;
   color: #000;
-  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 400;
+  transition: opacity 0.3s ease;
 }
 
-.linkedin-link {
-  font-size: 20px;
-}
-
-.github-link:hover,
-.linkedin-link:hover {
-  transform: rotate(5deg) scale(1.1);
-}
-
-.github-link svg {
-  height: 1.1em;
-  width: 1.7em;
-  vertical-align: middle;
-  display: inline-block;
+.nav-link:hover {
+  opacity: 0.6;
 }
 
 /* Hero Section - Full viewport height */
