@@ -498,14 +498,15 @@ main {
 
 /* Footer */
 .footer-section {
-  margin: 80px auto 0 auto;
+  margin: 80px 0 0 0;
   padding: 0;
   max-width: 100%;
   box-sizing: border-box;
+  width: 100vw;
 }
 
 .footer-divider {
-  width: 100%;
+  width: 100vw;
   height: 1px;
   background: #e0e0e0;
   margin: 0;
@@ -513,10 +514,11 @@ main {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
   padding: 60px 8vw;
   box-sizing: border-box;
+  gap: 80px;
 }
 
 .footer-brand {
@@ -525,7 +527,7 @@ main {
 }
 
 .footer-logo {
-  font-family: 'Manrope', Arial, sans-serif;
+  font-family: 'Inria Serif', serif;
   font-size: 24px;
   font-weight: 400;
   margin: 0;
@@ -548,7 +550,7 @@ main {
   font-weight: 600;
   color: #111;
   margin: 0 0 4px 0;
-  font-family: 'Manrope', Arial, sans-serif;
+  font-family: 'Inria Serif', serif;
 }
 
 .footer-link {
