@@ -552,6 +552,7 @@ main {
   color: #111;
   margin: 0 0 4px 0;
   font-family: 'Manrope', Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .footer-link {
@@ -560,6 +561,7 @@ main {
   text-decoration: none;
   transition: color 0.2s ease;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .footer-link:hover {
