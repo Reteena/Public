@@ -399,10 +399,26 @@
   transition: color 0.2s ease;
   font-weight: 400;
   text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .footer-link:hover {
   color: #111;
+}
+
+.footer-arrow {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
+
+.footer-link:hover .footer-arrow {
+  opacity: 1;
+  transform: translate(1px, -1px);
 }
 
 .footer-bottom {
