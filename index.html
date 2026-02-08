@@ -81,7 +81,7 @@
           <span class="project-index">01</span>
           <div class="project-meta">
             <span class="project-title">Remembrance</span>
-            <span class="project-collaboration">Private Beta Scheduled for Launch</span>
+            <span class="project-collaboration">Launching in Q3 2026</span>
           </div>
           
           <p class="project-description">
@@ -198,6 +198,18 @@
       banner.style.display = 'none';
       header.style.top = '0';
       document.body.style.marginTop = '0';
+      localStorage.setItem('bannerClosed', 'true');
+    }
+
+    // Check if banner was previously closed
+    if (localStorage.getItem('bannerClosed') === 'true') {
+      document.addEventListener('DOMContentLoaded', () => {
+        const banner = document.getElementById('neurips-banner');
+        const header = document.getElementById('header');
+        banner.style.display = 'none';
+        header.style.top = '0';
+        document.body.style.marginTop = '0';
+      });
     }
 
     // Add scroll effect for header
