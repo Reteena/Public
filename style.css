@@ -544,6 +544,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  overflow: visible;
 }
 
 .footer-column-header {
@@ -565,6 +566,8 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  width: fit-content;
+  overflow: visible;
 }
 
 .footer-link:hover {
@@ -577,6 +580,7 @@ main {
   height: 12px;
   opacity: 0.5;
   transition: all 0.2s ease;
+  flex-shrink: 0;
 }
 
 .footer-link:hover .footer-arrow {
