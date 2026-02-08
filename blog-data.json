@@ -2,29 +2,32 @@
   "posts": [
     {
       "id": "remembrance",
-      "title": "Remembrance: AI Memory Companion for Alzheimer's Patients",
+      "title": "Towards Emotionally Intelligent AI",
       "description": "Remembrance is an emotionally intelligent AI memory companion for Alzheimer's patients that delivers reminiscence therapy through natural conversations.",
       "category": "product",
       "date": "January 15, 2026",
       "author": "Reteena Team",
       "image": "remembrance.png",
       "toc": [
-        { "id": "overview", "title": "Overview" },
-        { "id": "how-it-works", "title": "How It Works" },
-        { "id": "impact", "title": "Impact" }
+        { "id": "motivation", "title": "Understanding patient grief" },
+        { "id": "approach", "title": "Reminiscence therapy design" },
+        { "id": "technology", "title": "Knowledge graph architecture" }
       ],
       "content": [
-        { "type": "heading", "id": "overview", "text": "Overview" },
-        { "type": "paragraph", "text": "Remembrance is an emotionally intelligent AI memory companion designed specifically for Alzheimer's patients. By storing memories in interconnected knowledge graphs that mirror how human memory actually works, Remembrance helps patients maintain their sense of identity and connection to their life stories even as cognitive decline progresses." },
-        { "type": "heading", "id": "how-it-works", "text": "How It Works" },
-        { "type": "paragraph", "text": "The system delivers reminiscence therapy through natural conversations, allowing patients to engage with their memories in an intuitive and meaningful way. Our knowledge graph technology creates rich connections between memories, enabling patients to explore their life stories from multiple perspectives." },
-        { "type": "heading", "id": "impact", "text": "Impact" },
-        { "type": "paragraph", "text": "Early beta testing has shown promising results in helping patients maintain cognitive function and emotional well-being. We're excited to launch our private beta soon and continue refining this important tool." }
+        { "type": "heading", "id": "motivation", "text": "Understanding patient grief" },
+        { "type": "paragraph", "text": "Through extensive conversations with patients, caregivers, and healthcare providers, a profound pattern emerged. What people mourn most deeply is not simply the loss of life itself, but the erosion of shared moments, inside jokes, humorous nicknames, and the countless small interactions that constitute the texture of human connection. Traditional therapeutic approaches often struggle to address this specific form of grief because they lack mechanisms for actively preserving these precious details before they are lost." },
+        { "type": "paragraph", "text": "The insight that inspired Remembrance came from recognizing that the moments people cherish most are often not major life events, but rather small, repeated interactions that build intimacy over time. A particular way someone laughed. The nickname from a childhood mispronunciation. The story retold at every gathering. These moments exist primarily in living memory, rarely documented systematically." },
+        { "type": "heading", "id": "approach", "text": "Reminiscence therapy design" },
+        { "type": "paragraph", "text": "Remembrance provides AI-assisted reminiscence therapy combining professional facilitation with technological accessibility. The system uses carefully designed, specific prompts personalized based on family-provided information about relevant people, places, and time periods. Rather than asking broad questions, it scaffolds memory recall through focused prompts that activate relevant memory networks." },
+        { "type": "paragraph", "text": "The system maintains appropriate emotional tone by recognizing signs of fatigue, confusion, or distress and responding with simplified prompts or topic shifts. It validates emotions and memories without judgment, respecting patient boundaries while exploring positive reminiscence. Family involvement provides essential context and creates structured interaction time focused on shared history rather than illness management." },
+        { "type": "heading", "id": "technology", "text": "Knowledge graph architecture" },
+        { "type": "paragraph", "text": "Memories are stored as interconnected data in a knowledge graph structure that mirrors how human memory works. Rather than isolated documents, memories exist as nodes with explicit relationships linking them to other memories, people, places, and themes. This enables intelligent memory traversal where the system guides patients along meaningful pathways of association." },
+        { "type": "paragraph", "text": "The technical implementation uses natural language processing to extract entities, relationships, and themes from conversations. Privacy is paramount—all data is encrypted, access is strictly controlled, and granular privacy settings allow patients to designate certain memories as private. The system prioritizes data privacy and user control, recognizing these memories as deeply personal and precious." }
       ]
     },
     {
       "id": "low-field-mri",
-      "title": "Low Field MRI Framework: Accessible Alzheimer's Diagnosis",
+      "title": "Accessible and Economical Alzheimer's Diagnostic",
       "description": "Enhances low-field MRI scans for Alzheimer's diagnosis using deep learning-based brain segmentation and volumetric analysis.",
       "category": "research",
       "date": "December 10, 2024",
@@ -37,16 +40,16 @@
       ],
       "content": [
         { "type": "heading", "id": "introduction", "text": "Introduction" },
-        { "type": "paragraph", "text": "Our Low Field MRI Framework represents a breakthrough in accessible neuroimaging for Alzheimer's diagnosis. By leveraging deep learning-based brain segmentation and volumetric analysis, we enable accurate diagnosis using affordable, low-strength scanners." },
+        { "type": "paragraph", "text": "Our Low Field MRI Framework represents a breakthrough in accessible neuroimaging for Alzheimer's diagnosis. By leveraging deep learning-based brain segmentation and volumetric analysis, we enable accurate diagnosis using affordable, low-strength scanners that cost a fraction of conventional high-field MRI systems." },
         { "type": "heading", "id": "methodology", "text": "Methodology" },
-        { "type": "paragraph", "text": "We developed a sophisticated deep learning pipeline that compensates for the lower signal quality of low-field MRI scanners. Our approach achieves 96% diagnostic accuracy while using equipment that costs a fraction of conventional high-field MRI systems." },
+        { "type": "paragraph", "text": "We developed a sophisticated deep learning pipeline that compensates for the lower signal quality of low-field MRI scanners. Our approach achieves 96% diagnostic accuracy while preserving clinically meaningful structural information for early neurodegenerative assessment." },
         { "type": "heading", "id": "results", "text": "Results" },
-        { "type": "paragraph", "text": "This work was published at IEEE BigData 2024 and demonstrates that high-quality neuroimaging for Alzheimer's diagnosis can be made accessible to healthcare facilities worldwide, regardless of their budget constraints." }
+        { "type": "paragraph", "text": "Published at IEEE BigData 2024, this work demonstrates that high-quality neuroimaging for Alzheimer's diagnosis can be made accessible to healthcare facilities worldwide, regardless of budget constraints." }
       ]
     },
     {
       "id": "lark",
-      "title": "Lark: Multi-Stakeholder LLM Agents for Decision Making",
+      "title": "Multi-Stakeholder LLM Agents for Decision Making",
       "description": "A biologically inspired decision-making framework that combines LLM-based reasoning with an evolutionary, stakeholder-aware multi-agent system.",
       "category": "research",
       "date": "December 5, 2025",
@@ -59,16 +62,16 @@
       ],
       "content": [
         { "type": "heading", "id": "concept", "text": "The Concept" },
-        { "type": "paragraph", "text": "Lark is a biologically inspired decision-making framework that addresses the challenge of balancing multiple stakeholder perspectives in complex decision scenarios. By combining LLM-based reasoning with evolutionary principles, Lark generates aligned strategies that respect diverse stakeholder interests." },
+        { "type": "paragraph", "text": "Lark is a biologically inspired decision-making framework that addresses the challenge of balancing multiple stakeholder perspectives in complex scenarios. By combining LLM-based reasoning with evolutionary principles, Lark generates aligned strategies that respect diverse stakeholder interests while maintaining computational efficiency." },
         { "type": "heading", "id": "architecture", "text": "Architecture" },
-        { "type": "paragraph", "text": "The system employs plasticity, duplication and maturation mechanisms, ranked-choice aggregation, and compute-aware optimization to evolve effective decision strategies across multiple cycles. This approach mirrors biological neural development while maintaining computational efficiency." },
+        { "type": "paragraph", "text": "The system employs plasticity, duplication and maturation mechanisms, ranked-choice aggregation, and compute-aware optimization to evolve effective decision strategies. This approach mirrors biological neural development while balancing performance and computational cost across decision cycles." },
         { "type": "heading", "id": "applications", "text": "Applications" },
-        { "type": "paragraph", "text": "Our work, presented at NeurIPS Workshop 2025, demonstrates how multi-agent systems can handle complex trade-offs while maintaining transparency and stakeholder alignment. The framework has applications across healthcare policy, resource allocation, and organizational decision-making." }
+        { "type": "paragraph", "text": "Presented at NeurIPS Workshop 2025, this work demonstrates how multi-agent systems can handle complex trade-offs while maintaining transparency and stakeholder alignment. Applications span healthcare policy, resource allocation, and organizational decision-making." }
       ]
     },
     {
       "id": "geneattentionnet",
-      "title": "GeneAttentionNet: Biologically Informed Disease Classification",
+      "title": "Biologically Informed Disease Classification",
       "description": "A biologically informed neural architecture for Alzheimer's disease classification using gene expression data.",
       "category": "research",
       "date": "January 20, 2025",
@@ -81,16 +84,16 @@
       ],
       "content": [
         { "type": "heading", "id": "motivation", "text": "Motivation" },
-        { "type": "paragraph", "text": "GeneAttentionNet represents a new approach to disease classification that respects the biological reality of gene interactions. Traditional machine learning models often treat genes as independent features, ignoring the complex regulatory networks that govern cellular behavior." },
+        { "type": "paragraph", "text": "GeneAttentionNet represents a new approach to disease classification that respects the biological reality of gene interactions. Traditional models often treat genes as independent features, ignoring the complex regulatory networks that govern cellular behavior." },
         { "type": "heading", "id": "innovation", "text": "Innovation" },
-        { "type": "paragraph", "text": "Our architecture combines attention-based tokenization, pathway gating, and protein-interaction-masked heads to capture gene-level context while maintaining biological interpretability. This approach improves accuracy over baseline models while enabling trustworthy, mechanism-aware predictions." },
+        { "type": "paragraph", "text": "Our architecture combines attention-based tokenization, pathway gating, and protein-interaction-masked heads to capture gene-level context while maintaining biological interpretability. This improves accuracy over baseline models while enabling trustworthy, mechanism-aware predictions." },
         { "type": "heading", "id": "future", "text": "Future Directions" },
         { "type": "paragraph", "text": "Presented at MIT URTC 2025, this work opens new avenues for transcriptomic disease modeling and biomedical research. We're continuing to refine the architecture and explore applications across other neurodegenerative diseases." }
       ]
     },
     {
       "id": "cortiforge",
-      "title": "CortiForge: Modeling Cortical Microcircuits",
+      "title": "Modeling Cortical Microcircuits",
       "description": "An open-source, biologically grounded framework for modeling cortical microcircuits that links spiking neural network simulations with experimental brain data.",
       "category": "research",
       "date": "November 1, 2025",
@@ -103,11 +106,11 @@
       ],
       "content": [
         { "type": "heading", "id": "background", "text": "Background" },
-        { "type": "paragraph", "text": "Understanding cortical microcircuits is fundamental to neuroscience research, yet existing tools often lack the integration between computational models and experimental data. CortiForge addresses this gap with a comprehensive framework for biologically realistic circuit modeling." },
+        { "type": "paragraph", "text": "Understanding cortical microcircuits is fundamental to neuroscience research, yet existing tools often lack integration between computational models and experimental data. CortiForge addresses this gap with a comprehensive framework for biologically realistic circuit modeling." },
         { "type": "heading", "id": "framework", "text": "The Framework" },
         { "type": "paragraph", "text": "Through standardized neuron libraries and AllenSDK integration, CortiForge provides end-to-end workflows that enable interpretable, validated circuit models. Researchers can build models that bridge theory, experiments, and neuroscience research at scale reproducibly." },
         { "type": "heading", "id": "impact", "text": "Research Impact" },
-        { "type": "paragraph", "text": "Submitted to ICLR 2026, CortiForge represents our commitment to open science and reproducible neuroscience research. By making sophisticated modeling tools accessible to the broader research community, we hope to accelerate progress in understanding brain function." }
+        { "type": "paragraph", "text": "Submitted to ICLR 2026, CortiForge represents our commitment to open science and reproducible research. By making sophisticated modeling tools accessible to the broader community, we hope to accelerate progress in understanding brain function." }
       ]
     }
   ]
