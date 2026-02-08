@@ -121,6 +121,11 @@
           return;
         }
 
+        // Find previous and next posts
+        const currentIndex = data.posts.findIndex(p => p.id === postId);
+        const prevPost = currentIndex > 0 ? data.posts[currentIndex - 1] : null;
+        const nextPost = currentIndex < data.posts.length - 1 ? data.posts[currentIndex + 1] : null;
+
         // Update page title
         document.getElementById('page-title').textContent = `${post.title} - Reteena`;
 
@@ -139,6 +144,21 @@
           return '';
         }).join('');
 
+        // Build navigation
+        const prevNavHtml = prevPost ? `
+          <a href="post.html?id=${prevPost.id}" class="blog-post-nav-link prev">
+            <span class="blog-post-nav-label">← Previous</span>
+            <div class="blog-post-nav-title">${prevPost.title}</div>
+          </a>
+        ` : '<div></div>';
+
+        const nextNavHtml = nextPost ? `
+          <a href="post.html?id=${nextPost.id}" class="blog-post-nav-link next">
+            <span class="blog-post-nav-label">Next →</span>
+            <div class="blog-post-nav-title">${nextPost.title}</div>
+          </a>
+        ` : '<div></div>';
+
         // Render post
         const container = document.getElementById('post-container');
         container.innerHTML = `
@@ -151,7 +171,7 @@
             <div class="blog-post-page-meta">${post.date}${post.author ? ' by ' + post.author : ''}</div>
           </header>
 
-          <div class="blog-post-featured-image" style="aspect-ratio: 16/9;"></div>
+          ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-post-featured-image">` : '<div class="blog-post-featured-image" style="aspect-ratio: 16/9;"></div>'}
 
           <nav class="blog-post-toc">
             <div class="blog-post-toc-header" onclick="toggleTOC()">
@@ -166,6 +186,11 @@
           <div class="blog-post-body">
             ${contentHtml}
           </div>
+
+          <nav class="blog-post-navigation">
+            ${prevNavHtml}
+            ${nextNavHtml}
+          </nav>
         `;
       } catch (error) {
         console.error('Error loading blog post:', error);
