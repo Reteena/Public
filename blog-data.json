@@ -1,6 +1,92 @@
 {
   "posts": [
     {
+      "id": "remembrance-ai-therapy",
+      "title": "Remembrance",
+      "description": "AI therapeutic service providing reminiscence therapy through interconnected memory knowledge graphs.",
+      "category": "product",
+      "date": "Feb 9, 2026",
+      "author": "",
+      "toc": [
+        { "id": "motivation", "title": "Understanding patient grief" },
+        { "id": "approach", "title": "Reminiscence therapy design" },
+        { "id": "technology", "title": "Knowledge graph architecture" }
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Most conventional interventions for patients facing terminal illness or cognitive decline focus on managing physical symptoms, providing palliative care, and offering psychological support through traditional counseling methods. While these approaches address important aspects of patient wellbeing, they often miss what patients and their families actually grieve most deeply during these difficult times. Through extensive conversations with patients, caregivers, and healthcare providers, a profound pattern emerged that fundamentally shaped the development of Remembrance. What people mourn is not simply the loss of life itself, but rather the erosion of shared moments together, the fading of inside jokes that defined relationships, the forgetting of humorous nicknames that carried decades of affection, and the gradual disappearance of the countless small interactions that constitute the texture of human connection. These seemingly minor details represent the lived experience of relationships, the accumulated history that makes each bond unique and irreplaceable."
+        },
+        {
+          "type": "paragraph",
+          "text": "Traditional therapeutic approaches, while valuable, often struggle to address this specific form of grief because they lack mechanisms for actively preserving and engaging with these precious details before they are lost. Standard reminiscence therapy, a well-established intervention particularly for dementia patients, typically relies on physical objects like photo albums, music, or familiar objects to trigger memories and stimulate conversation. While effective, this approach depends heavily on the availability of appropriate prompts and the therapist's skill in facilitating recall. As cognitive decline progresses or as end-of-life approaches, the window for capturing these memories narrows, and the burden on families to document and preserve them becomes overwhelming at precisely the moment when they are least equipped to handle additional responsibilities. The spontaneous, unstructured nature of memory recall also means that important moments may never be captured simply because the right prompt never appeared at the right time."
+        },
+        {
+          "type": "heading",
+          "id": "motivation",
+          "text": "Understanding patient grief"
+        },
+        {
+          "type": "paragraph",
+          "text": "The insight that inspired Remembrance came from recognizing that the moments people cherish most are often not the major life events documented in photo albums or medical records, but rather the small, repeated interactions that build relationship intimacy over time. A particular way someone laughed at a certain type of joke. The nickname that started from a childhood mispronunciation and persisted for fifty years. The story told and retold at every family gathering, with each retelling adding new embellishments and inside references. The ritual of Sunday morning phone calls or the specific way a grandparent said goodnight. These moments are simultaneously deeply meaningful and incredibly vulnerable to loss because they exist primarily in living memory, rarely documented or preserved in any systematic way. When cognitive decline or terminal illness threatens these memories, families face the heartbreaking prospect of losing not just their loved one but the entire shared history that defined their relationship."
+        },
+        {
+          "type": "paragraph",
+          "text": "This realization suggested that therapeutic interventions could be dramatically more effective if they focused explicitly on capturing, preserving, and actively engaging with these specific types of memories before they were lost. Rather than waiting for memories to fade and then trying to stimulate recall, a proactive approach could systematically elicit and document the rich tapestry of shared experiences while patients still retained the capacity to recall and articulate them. Such an approach would serve multiple therapeutic purposes simultaneously. For patients, the process of recalling and sharing these memories provides cognitive stimulation, emotional validation, and a sense of legacy creation, affirming that their experiences and relationships have lasting meaning. For family members, participating in memory capture provides quality time with their loved one focused on positive shared experiences rather than illness management, creates a permanent record they can return to after loss, and helps them process anticipatory grief by actively engaging with rather than avoiding the reality of impending loss."
+        },
+        {
+          "type": "paragraph",
+          "text": "The therapeutic value of reminiscence has been well-established in gerontology and palliative care research, with studies demonstrating benefits including reduced depression and anxiety, improved quality of life, enhanced sense of identity and continuity, and strengthened family bonds. However, traditional reminiscence therapy faces practical limitations that restrict its accessibility and effectiveness. It typically requires trained facilitators, making it expensive and available primarily in institutional settings. Sessions are time-limited and infrequent, providing only brief windows for memory work. The unstructured nature of conversation means important memories may never surface if the right prompts are not provided. Documentation, when it occurs, often consists of simple notes that capture only a fraction of the richness of the conversation. These limitations suggested that technology, thoughtfully applied with respect for the deeply personal nature of the work, could substantially enhance the reach and impact of reminiscence therapy."
+        },
+        {
+          "type": "heading",
+          "id": "approach",
+          "text": "Reminiscence therapy design"
+        },
+        {
+          "type": "paragraph",
+          "text": "Remembrance was designed to provide AI-assisted reminiscence therapy that combines the benefits of professional facilitation with the accessibility and persistence that technology enables. The system engages patients in gentle, conversational prompting designed to elicit memories of the small, meaningful moments that define relationships. Rather than asking broad questions that might overwhelm or confuse patients with cognitive impairment, Remembrance uses a carefully designed progression of specific, focused prompts that scaffold memory recall. These prompts are personalized based on information provided by family members during setup, allowing the system to ask about specific people, places, and time periods relevant to the patient's life. The conversational interface is designed to be natural and unintimidating, avoiding technical jargon or complex interactions that might frustrate patients with varying levels of technological literacy or cognitive capacity."
+        },
+        {
+          "type": "paragraph",
+          "text": "The prompting strategy employed by Remembrance reflects deep consideration of how memory works and how to support recall in patients with cognitive challenges. Rather than asking patients to generate memories unprompted, which can be cognitively demanding and frustrating, the system provides specific cues that activate relevant memory networks. For example, instead of asking about a general relationship, Remembrance might prompt with specific contexts like meals shared together, holiday traditions, or particular locations associated with positive memories. When a memory begins to emerge, the system asks follow-up questions that help patients elaborate and enrich their recollections, gently guiding them to include sensory details, emotional responses, and the reactions of others present. This scaffolding approach makes memory work less frustrating and more successful, increasing patient engagement and the richness of captured memories."
+        },
+        {
+          "type": "paragraph",
+          "text": "A critical design principle for Remembrance is maintaining appropriate emotional tone and pacing for therapeutic work with vulnerable populations. The system is programmed to recognize signs of patient fatigue, confusion, or distress and to respond appropriately by simplifying prompts, taking breaks, or shifting to less emotionally charged topics. It validates patient emotions and memories without judgment, accepting whatever patients choose to share without imposing external standards of what should be remembered or how memories should be expressed. For patients who find certain topics difficult or painful, the system respects their boundaries and explores alternative avenues for positive reminiscence. This emotional intelligence, while implemented through carefully designed conversational rules and sentiment analysis, creates an experience that patients and families describe as supportive rather than mechanical."
+        },
+        {
+          "type": "paragraph",
+          "text": "The involvement of family members in the Remembrance process serves both practical and therapeutic purposes. Practically, family members provide essential context and personalization information that makes prompts relevant and meaningful to patients. They can participate in joint reminiscence sessions where multiple perspectives on shared memories are captured, often leading to richer and more complete narratives as participants fill in details the others had forgotten or provide their own viewpoints on shared experiences. Therapeutically, the process of collaborating on memory work provides structured, meaningful interaction time focused on positive shared history rather than illness management or caregiving tasks. This can help shift family dynamics away from the exclusively caregiver-patient relationship that often dominates late-life care, toward a more balanced relationship where the patient is recognized as a person with a rich history rather than simply a set of care needs."
+        },
+        {
+          "type": "heading",
+          "id": "technology",
+          "text": "Knowledge graph architecture"
+        },
+        {
+          "type": "paragraph",
+          "text": "The memories captured through Remembrance are stored not as simple text documents but as interconnected data in a knowledge graph structure, a choice that reflects deep consideration of how human memory actually works. Human memory is not a filing cabinet where experiences are stored in separate folders, but rather a richly interconnected network where each memory connects to many others through various types of relationships. Remembering one event often triggers recall of related events because they share participants, locations, emotional tones, or thematic elements. A knowledge graph mimics this associative structure by representing memories as nodes with explicit relationships linking them to other memories, people, places, time periods, and emotional themes. This graph structure enables several capabilities that would be impossible or much more difficult with traditional document storage."
+        },
+        {
+          "type": "paragraph",
+          "text": "The knowledge graph enables intelligent memory traversal where the system can guide patients through their memory landscape along meaningful pathways. Rather than presenting isolated prompts, Remembrance can follow threads of association, asking patients to elaborate on people or places mentioned in one memory by recalling other memories involving those same elements. This associative approach mirrors natural reminiscence in human conversation and makes the experience feel more organic and less interrogative. For family members reviewing captured memories, the graph structure enables exploration through multiple pathways based on their interests or needs at different times. They might explore chronologically to understand life progression, by person to see all memories involving a particular family member or friend, by location to recall a childhood home or favorite vacation spot, or by theme to find all memories involving humor, challenge, or triumph."
+        },
+        {
+          "type": "paragraph",
+          "text": "The interconnected nature of the knowledge graph also provides redundancy that helps preserve memories even as individual nodes might fade in detail or clarity. If a patient's recollection of a specific event becomes confused or incomplete over time, the connections to related memories, the people involved, and the broader context preserved in the graph help reconstruct a more complete picture. This redundancy mirrors how human memory networks provide resilience against forgetting, where losing access to one memory pathway does not necessarily mean the memory is entirely inaccessible if alternative routes exist. For families using Remembrance over extended periods as cognitive decline progresses, this redundancy becomes increasingly valuable as it allows them to maintain connection to memories even as the patient's ability to actively contribute new recollections diminishes."
+        },
+        {
+          "type": "paragraph",
+          "text": "The technical implementation of the knowledge graph involves natural language processing to extract entities, relationships, and themes from conversational memory sharing. When a patient describes a memory, the system identifies key elements such as people mentioned, locations, time indicators, activities, and emotional content. These extracted elements become nodes and edges in the knowledge graph, automatically creating links to existing nodes when the same elements appear in multiple memories. The system also infers additional relationships based on temporal proximity, co-occurrence of participants, and thematic similarity, enriching the graph beyond what is explicitly stated. This automatic structuring happens behind the scenes without requiring patients or families to manually organize or categorize their memories, preserving the natural, conversational character of the reminiscence experience."
+        },
+        {
+          "type": "paragraph",
+          "text": "Privacy and data sensitivity are paramount concerns for Remembrance given the deeply personal nature of the memories being captured and the vulnerability of the patient population. All memory data is encrypted both in transit and at rest, with access strictly controlled and limited to authorized family members designated by the patient or their healthcare proxy. The system includes granular privacy controls allowing patients and families to designate certain memories as private if they wish, and to control what can be shared with healthcare providers if integration with care planning is desired. Data is not used for any purpose beyond serving the patient and family, with no mining for commercial purposes or research without explicit consent. The knowledge graph architecture, while computationally sophisticated, is implemented in a way that prioritizes data privacy and user control, recognizing that these memories represent some of the most intimate and precious information people possess."
+        }
+      ]
+    },
+    {
       "id": "low-field-mri",
       "title": "Low field MRI framework",
       "description": "Published framework for low field MRI imaging applications.",
