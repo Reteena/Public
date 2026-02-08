@@ -29,7 +29,7 @@
 .blog-nav {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0px;
 }
 
 .blog-nav-link {
