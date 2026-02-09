@@ -3,7 +3,7 @@
     {
       "id": "remembrance",
       "title": "AI Memory Companion for Alzheimer's Patients",
-      "description": "Remembrance is an emotionally intelligent AI memory companion delivering conversational reminiscence therapy for Alzheimer’s patients.",
+      "description": "Remembrance is an AI model delivering reminiscence therapy for Alzheimer’s patients",
       "category": "product",
       "date": "January 15, 2026",
       "author": "Reteena Team",
@@ -80,7 +80,7 @@
     {
       "id": "geneattentionnet",
       "title": "Biologically Informed Disease Classification",
-      "description": "A biologically informed neural architecture for Alzheimer’s disease classification using gene expression data.",
+      "description": "A biologically inspired framework combining LLM reasoning with stakeholder aware multi agent systems",
       "category": "research",
       "date": "January 20, 2025",
       "author": "Sunkalp Chandra, Gautham Korrapati",
@@ -106,7 +106,7 @@
     {
       "id": "cortiforge",
       "title": "Modeling Cortical Microcircuits",
-      "description": "An open source biologically grounded framework modeling cortical microcircuits linking spiking simulations with experimental brain data.",
+      "description": "An open source biologically grounded framework modeling cortical microcircuits linking spiking simulations with brain data",
       "category": "research",
       "date": "November 1, 2025",
       "author": "Sunkalp Chandra, Gautham Korrapati, Dheeraj Chintapalli, S. Yang, Saketh Satti, Jainish Patel",
