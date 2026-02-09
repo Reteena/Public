@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Reteena</title>
+  <link rel="icon" type="image/png" href="image/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="image/favicon.png">
+  <link rel="apple-touch-icon" href="image/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/blog-style.css">
+</head>
+<body>
+  <!-- NeurIPS Banner -->
+  <div class="neurips-banner" id="neurips-banner">
+    <div class="announcement-content">
+      <span class="announcement-text">We're excited to announce our paper has been published at NeurIPS 2025</span>
+      <button class="announcement-close" onclick="closeBanner()" aria-label="Close banner">×</button>
+    </div>
+  </div>
+
+  <div class="frame">
+    <header id="header" class="header">
+      <div class="header-container">
+        <div class="glass-container">
+          <div class="glass-effect-backdrop"></div>
+          <div class="glass-effect top"></div>
+          <div class="glass-effect bottom"></div>
+          <div class="glass-effect left"></div>
+          <div class="glass-effect right"></div>
+        </div>
+        <div class="header-content">
+          <a href="index.html" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
+          <div class="header-spacer"></div>
+          <button class="burger-menu" id="burger-menu" aria-label="Menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Fullscreen Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay">
+      <button class="menu-close" id="menu-close" aria-label="Close menu">
+        <span class="close-line"></span>
+        <span class="close-line"></span>
+      </button>
+      <nav class="menu-nav">
+        <div class="menu-item">
+          <a href="blog.html" class="menu-link">Blog</a>
+          <div class="menu-divider"></div>
+        </div>
+        <div class="menu-item">
+          <a href="about.html" class="menu-link">About</a>
+          <div class="menu-divider"></div>
+        </div>
+        <div class="menu-item">
+          <a href="mailto:hello@reteena.org" class="menu-link">Contact</a>
+          <div class="menu-divider"></div>
+        </div>
+      </nav>
+    </div>
+    
+    <main>
+      <div class="blog-container">
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+          <h1 class="blog-main-title">Blog</h1>
+          <nav class="blog-nav" id="blog-nav">
+            <a href="blog.html" class="blog-nav-link active" data-category="all">All Posts</a>
+            <a href="blog.html?category=product" class="blog-nav-link" data-category="product">Product</a>
+            <a href="blog.html?category=research" class="blog-nav-link" data-category="research">Research</a>
+            <a href="blog.html?category=company" class="blog-nav-link" data-category="company">Company</a>
+          </nav>
+        </aside>
+
+        <!-- Blog Posts -->
+        <div class="blog-content" id="blog-content">
+          <!-- Posts will be loaded dynamically -->
+        </div>
+      </div>
+
+      <footer class="footer-section">
+        <div class="footer-divider"></div>
+        <div class="footer-container">
+          <div class="footer-brand">
+            <h2 class="footer-logo">Reteena</h2>
+          </div>
+          
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h3 class="footer-column-header">Company</h3>
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="blog.html" class="footer-link">Blog</a>
+              <a href="about.html" class="footer-link">About</a>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-column-header">Socials</h3>
+              <a href="https://linkedin.com/company/reteena" target="_blank" class="footer-link">LinkedIn</a>
+              <a href="https://github.com/reteena" target="_blank" class="footer-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p class="footer-copyright">© 2026 Copyright. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <svg style="display:none;">
+    <filter id="distortion">
+      <feTurbulence type="turbulence" baseFrequency="0.01 0.1" numOctaves="1" result="turbulence"/>
+      <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
+  <script>
+    // Close banner function
+    function closeBanner() {
+      const banner = document.getElementById('neurips-banner');
+      const header = document.getElementById('header');
+      banner.style.display = 'none';
+      header.style.top = '0';
+      document.body.style.marginTop = '0';
+      localStorage.setItem('bannerClosed', 'true');
+    }
+
+    // Check if banner was previously closed
+    if (localStorage.getItem('bannerClosed') === 'true') {
+      document.addEventListener('DOMContentLoaded', () => {
+        const banner = document.getElementById('neurips-banner');
+        const header = document.getElementById('header');
+        banner.style.display = 'none';
+        header.style.top = '0';
+        document.body.style.marginTop = '0';
+      });
+    }
+
+    // Add scroll effect for header
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Load blog posts from JSON
+    async function loadBlogPosts() {
+      try {
+        const response = await fetch('data/blog-data.json');
+        const data = await response.json();
+        const urlParams = new URLSearchParams(window.location.search);
+        const category = urlParams.get('category') || 'all';
+        
+        // Update active nav link
+        document.querySelectorAll('.blog-nav-link').forEach(link => {
+          link.classList.remove('active');
+          if (link.dataset.category === category) {
+            link.classList.add('active');
+          }
+        });
+
+        // Filter and render posts
+        const filteredPosts = category === 'all' 
+          ? data.posts 
+          : data.posts.filter(post => post.category === category);
+
+        const blogContent = document.getElementById('blog-content');
+        blogContent.innerHTML = '';
+
+        filteredPosts.forEach(post => {
+          const article = document.createElement('article');
+          article.className = 'blog-post';
+          article.innerHTML = `
+            <a href="post.html?id=${post.id}" class="blog-post-link">
+              <h2 class="blog-post-title">${post.title}</h2>
+              <p class="blog-post-description">${post.description}</p>
+              <div class="blog-post-meta">
+                <span class="blog-post-category">${post.category.charAt(0).toUpperCase() + post.category.slice(1)}</span>
+                <span class="blog-post-separator">·</span>
+                <span class="blog-post-date">${post.date}</span>
+              </div>
+            </a>
+          `;
+          blogContent.appendChild(article);
+        });
+
+        if (filteredPosts.length === 0) {
+          blogContent.innerHTML = '<p style="color: #999;">No posts in this category yet.</p>';
+        }
+      } catch (error) {
+        console.error('Error loading blog posts:', error);
+        document.getElementById('blog-content').innerHTML = '<p style="color: #999;">Error loading posts.</p>';
+      }
+    }
+
+    // Button handlers and keyboard shortcuts
+    document.addEventListener('DOMContentLoaded', () => {
+      loadBlogPosts();
+
+      // Burger menu functionality
+      const burgerMenu = document.getElementById('burger-menu');
+      const menuOverlay = document.getElementById('menu-overlay');
+      const menuClose = document.getElementById('menu-close');
+      
+      function openMenu() {
+        menuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function closeMenu() {
+        menuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+      
+      burgerMenu.addEventListener('click', openMenu);
+      menuClose.addEventListener('click', closeMenu);
+      
+      // Close menu when clicking outside
+      menuOverlay.addEventListener('click', (e) => {
+        if (e.target === menuOverlay) {
+          closeMenu();
+        }
+      });
+      
+      // Close menu with Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && menuOverlay.classList.contains('active')) {
+          closeMenu();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

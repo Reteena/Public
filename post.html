@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Blog Post | Reteena</title>
+  <link rel="icon" type="image/png" href="image/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="image/favicon.png">
+  <link rel="apple-touch-icon" href="image/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/blog-style.css">
+</head>
+<body>
+  <!-- NeurIPS Banner -->
+  <div class="neurips-banner" id="neurips-banner">
+    <div class="announcement-content">
+      <span class="announcement-text">We're excited to announce our paper has been published at NeurIPS 2025</span>
+      <button class="announcement-close" onclick="closeBanner()" aria-label="Close banner">×</button>
+    </div>
+  </div>
+
+  <div class="frame">
+    <header id="header" class="header">
+      <div class="header-container">
+        <div class="glass-container">
+          <div class="glass-effect-backdrop"></div>
+          <div class="glass-effect top"></div>
+          <div class="glass-effect bottom"></div>
+          <div class="glass-effect left"></div>
+          <div class="glass-effect right"></div>
+        </div>
+        <div class="header-content">
+          <a href="index.html" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
+          <div class="header-spacer"></div>
+          <button class="burger-menu" id="burger-menu" aria-label="Menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Fullscreen Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay">
+      <button class="menu-close" id="menu-close" aria-label="Close menu">
+        <span class="close-line"></span>
+        <span class="close-line"></span>
+      </button>
+      <nav class="menu-nav">
+        <div class="menu-item">
+          <a href="blog.html" class="menu-link">Blog</a>
+          <div class="menu-divider"></div>
+        </div>
+        <div class="menu-item">
+          <a href="about.html" class="menu-link">About</a>
+          <div class="menu-divider"></div>
+        </div>
+        <div class="menu-item">
+          <a href="mailto:hello@reteena.org" class="menu-link">Contact</a>
+          <div class="menu-divider"></div>
+        </div>
+      </nav>
+    </div>
+    
+    <main>
+      <article class="blog-post-page" id="post-container">
+        <!-- Content will be loaded dynamically -->
+        <div style="text-align: center; padding: 100px 20px; color: #999;">
+          Loading post...
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <svg style="display:none;">
+    <filter id="distortion">
+      <feTurbulence type="turbulence" baseFrequency="0.01 0.1" numOctaves="1" result="turbulence"/>
+      <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
+  <script>
+    function closeBanner() {
+      const banner = document.getElementById('neurips-banner');
+      const header = document.getElementById('header');
+      banner.style.display = 'none';
+      header.style.top = '0';
+      document.body.style.marginTop = '0';
+      localStorage.setItem('bannerClosed', 'true');
+    }
+
+    if (localStorage.getItem('bannerClosed') === 'true') {
+      document.addEventListener('DOMContentLoaded', () => {
+        const banner = document.getElementById('neurips-banner');
+        const header = document.getElementById('header');
+        banner.style.display = 'none';
+        header.style.top = '0';
+        document.body.style.marginTop = '0';
+      });
+    }
+
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Load blog post from JSON
+    async function loadBlogPost() {
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const postId = urlParams.get('id');
+
+        if (!postId) {
+          window.location.href = 'blog.html';
+          return;
+        }
+
+        const response = await fetch('data/blog-data.json');
+        const data = await response.json();
+        const post = data.posts.find(p => p.id === postId);
+
+        if (!post) {
+          document.getElementById('post-container').innerHTML = `
+            <div style="text-align: center; padding: 100px 20px;">
+              <h1 style="color: #111; margin-bottom: 20px;">Post not found</h1>
+              <a href="blog.html" style="color: #666;">Return to blog</a>
+            </div>
+          `;
+          return;
+        }
+
+        // Find previous and next posts
+        const currentIndex = data.posts.findIndex(p => p.id === postId);
+        const prevPost = currentIndex > 0 ? data.posts[currentIndex - 1] : null;
+        const nextPost = currentIndex < data.posts.length - 1 ? data.posts[currentIndex + 1] : null;
+
+        // Update page title
+        document.getElementById('page-title').textContent = `${post.title} - Reteena`;
+
+        // Build TOC
+        const tocItems = post.toc.map(item => 
+          `<li><a href="#${item.id}">${item.title}</a></li>`
+        ).join('');
+
+        // Build content
+        const contentHtml = post.content.map(block => {
+          if (block.type === 'paragraph') {
+            return `<p>${block.text}</p>`;
+          } else if (block.type === 'heading') {
+            return `<h2 id="${block.id}">${block.text}</h2>`;
+          }
+          return '';
+        }).join('');
+
+        // Build navigation
+        const prevNavHtml = prevPost ? `
+          <a href="post.html?id=${prevPost.id}" class="blog-post-nav-link prev">
+            <span class="blog-post-nav-label">← Previous</span>
+            <div class="blog-post-nav-title">${prevPost.title}</div>
+          </a>
+        ` : '<div></div>';
+
+        const nextNavHtml = nextPost ? `
+          <a href="post.html?id=${nextPost.id}" class="blog-post-nav-link next">
+            <span class="blog-post-nav-label">Next →</span>
+            <div class="blog-post-nav-title">${nextPost.title}</div>
+          </a>
+        ` : '<div></div>';
+
+        // Render post
+        const container = document.getElementById('post-container');
+        container.innerHTML = `
+          <div class="blog-breadcrumb">
+            <a href="blog.html">Blog</a> / <a href="blog.html?category=${post.category}">${post.category.charAt(0).toUpperCase() + post.category.slice(1)}</a>
+          </div>
+
+          <header class="blog-post-header">
+            <h1 class="blog-post-page-title">${post.title}</h1>
+            <div class="blog-post-page-meta">${post.date}${post.author ? ' by ' + post.author : ''}</div>
+          </header>
+
+          ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-post-featured-image">` : '<div class="blog-post-featured-image" style="aspect-ratio: 16/9;"></div>'}
+
+          <nav class="blog-post-toc">
+            <div class="blog-post-toc-header" onclick="toggleTOC()">
+              <h2 class="blog-post-toc-title">Table of Contents</h2>
+              <span class="blog-post-toc-toggle">^</span>
+            </div>
+            <ul class="blog-post-toc-list">
+              ${tocItems}
+            </ul>
+          </nav>
+
+          <div class="blog-post-body">
+            ${contentHtml}
+          </div>
+
+          <nav class="blog-post-navigation">
+            ${prevNavHtml}
+            ${nextNavHtml}
+          </nav>
+        `;
+      } catch (error) {
+        console.error('Error loading blog post:', error);
+        document.getElementById('post-container').innerHTML = `
+          <div style="text-align: center; padding: 100px 20px;">
+            <h1 style="color: #111; margin-bottom: 20px;">Error loading post</h1>
+            <p style="color: #666; margin-bottom: 20px;">${error.message}</p>
+            <a href="blog.html" style="color: #666;">Return to blog</a>
+          </div>
+        `;
+      }
+    }
+
+    function toggleTOC() {
+      const toc = document.querySelector('.blog-post-toc');
+      if (toc) {
+        toc.classList.toggle('collapsed');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadBlogPost();
+
+      // Burger menu functionality
+      const burgerMenu = document.getElementById('burger-menu');
+      const menuOverlay = document.getElementById('menu-overlay');
+      const menuClose = document.getElementById('menu-close');
+      
+      function openMenu() {
+        menuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function closeMenu() {
+        menuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+      
+      burgerMenu.addEventListener('click', openMenu);
+      menuClose.addEventListener('click', closeMenu);
+      
+      // Close menu when clicking outside
+      menuOverlay.addEventListener('click', (e) => {
+        if (e.target === menuOverlay) {
+          closeMenu();
+        }
+      });
+      
+      // Close menu with Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && menuOverlay.classList.contains('active')) {
+          closeMenu();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
