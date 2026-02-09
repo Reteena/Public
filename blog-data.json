@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": "remembrance",
-      "title": "Remembrance: AI Memory Companion for Alzheimer's Patients",
+      "title": "AI Memory Companion for Alzheimer's Patients",
       "description": "Remembrance is an emotionally intelligent AI memory companion for Alzheimer's patients that delivers reminiscence therapy through natural conversations.",
       "category": "product",
       "date": "January 15, 2026",
@@ -29,7 +29,7 @@
     },
     {
       "id": "low-field-mri",
-      "title": "Low Field MRI Framework: Accessible Alzheimer's Diagnosis",
+      "title": "Accessible Alzheimer's Diagnosis",
       "description": "Enhances low-field MRI scans for Alzheimer's diagnosis using deep learning-based brain segmentation and volumetric analysis.",
       "category": "research",
       "date": "December 10, 2024",
@@ -54,7 +54,7 @@
     },
     {
       "id": "lark",
-      "title": "Lark: Multi-Stakeholder LLM Agents for Decision Making",
+      "title": "Multi-Stakeholder LLM Agents for Decision Making",
       "description": "A biologically inspired decision-making framework that combines LLM-based reasoning with an evolutionary, stakeholder-aware multi-agent system.",
       "category": "research",
       "date": "December 5, 2025",
@@ -79,7 +79,7 @@
     },
     {
       "id": "geneattentionnet",
-      "title": "GeneAttentionNet: Biologically Informed Disease Classification",
+      "title": "Biologically Informed Disease Classification",
       "description": "A biologically informed neural architecture for Alzheimer's disease classification using gene expression data.",
       "category": "research",
       "date": "January 20, 2025",
@@ -105,7 +105,7 @@
     },
     {
       "id": "cortiforge",
-      "title": "CortiForge: Modeling Cortical Microcircuits",
+      "title": "Modeling Cortical Microcircuits",
       "description": "An open-source, biologically grounded framework for modeling cortical microcircuits that links spiking neural network simulations with experimental brain data.",
       "category": "research",
       "date": "November 1, 2025",
