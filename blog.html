@@ -37,18 +37,35 @@
         <div class="header-content">
           <a href="index.html" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
           <div class="header-spacer"></div>
-          <nav class="nav-links">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-            <a href="about.html" class="nav-link">About</a>
-            <button class="nav-button contact-button">
-              <span class="button-text">CONTACT</span>
-              <span class="button-key">C</span>
-            </button>
-          </nav>
+          <button class="burger-menu" id="burger-menu" aria-label="Menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
         </div>
       </div>
     </header>
+
+    <!-- Fullscreen Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay">
+      <button class="menu-close" id="menu-close" aria-label="Close menu">
+        <span class="close-line"></span>
+        <span class="close-line"></span>
+      </button>
+      <nav class="menu-nav">
+        <div class="menu-item">
+          <a href="blog.html" class="menu-link">Blog</a>
+          <div class="menu-divider"></div>
+        </div>
+        <div class="menu-item">
+          <a href="about.html" class="menu-link">About</a>
+          <div class="menu-divider"></div>
+        </div>
+        <div class="menu-item">
+          <a href="mailto:hello@reteena.org" class="menu-link">Contact</a>
+          <div class="menu-divider"></div>
+        </div>
+      </nav>
+    </div>
     
     <main>
       <div class="blog-container">
@@ -192,21 +209,35 @@
     document.addEventListener('DOMContentLoaded', () => {
       loadBlogPosts();
 
-      const contactButton = document.querySelector('.contact-button');
-      if (contactButton) {
-        contactButton.addEventListener('click', () => {
-          window.location.href = 'mailto:hello@reteena.org';
-        });
+      // Burger menu functionality
+      const burgerMenu = document.getElementById('burger-menu');
+      const menuOverlay = document.getElementById('menu-overlay');
+      const menuClose = document.getElementById('menu-close');
+      
+      function openMenu() {
+        menuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
       }
-
+      
+      function closeMenu() {
+        menuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+      
+      burgerMenu.addEventListener('click', openMenu);
+      menuClose.addEventListener('click', closeMenu);
+      
+      // Close menu when clicking outside
+      menuOverlay.addEventListener('click', (e) => {
+        if (e.target === menuOverlay) {
+          closeMenu();
+        }
+      });
+      
+      // Close menu with Escape key
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'c' || e.key === 'C') {
-          if (!e.ctrlKey && !e.metaKey && !e.altKey) {
-            const activeElement = document.activeElement;
-            if (activeElement.tagName !== 'INPUT' && activeElement.tagName !== 'TEXTAREA') {
-              window.location.href = 'mailto:hello@reteena.org';
-            }
-          }
+        if (e.key === 'Escape' && menuOverlay.classList.contains('active')) {
+          closeMenu();
         }
       });
     });
