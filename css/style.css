@@ -308,8 +308,8 @@ html {
 /* Menu Navigation */
 .menu-nav {
   position: absolute;
-  bottom: 8vw;
-  left: 8vw;
+  bottom: 60px;
+  left: 60px;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -350,11 +350,11 @@ html {
 
 .menu-link {
   font-family: 'Inria Serif', serif;
-  font-size: clamp(48px, 8vw, 96px);
+  font-size: clamp(36px, 5vw, 64px);
   font-weight: 400;
   color: #fff;
   text-decoration: none;
-  padding: 16px 0;
+  padding: 12px 0;
   display: inline-block;
   transition: color 0.3s ease;
   line-height: 1;
@@ -368,7 +368,7 @@ html {
   width: 100%;
   height: 1px;
   background: rgba(255, 255, 255, 0.2);
-  margin: 8px 0 16px 0;
+  margin: 6px 0 12px 0;
 }
 
 /* Hero Section - Full viewport height */
@@ -720,17 +720,17 @@ main {
   }
 
   .menu-nav {
-    bottom: 5vw;
-    left: 5vw;
+    bottom: 40px;
+    left: 40px;
   }
 
   .menu-link {
-    font-size: clamp(36px, 12vw, 64px);
-    padding: 12px 0;
+    font-size: clamp(28px, 10vw, 48px);
+    padding: 10px 0;
   }
 
   .menu-divider {
-    margin: 4px 0 12px 0;
+    margin: 4px 0 10px 0;
   }
 
   .hero-section {
