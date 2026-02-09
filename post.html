@@ -20,7 +20,7 @@
   <div class="neurips-banner" id="neurips-banner">
     <div class="announcement-content">
       <span class="announcement-text">We're excited to announce our paper has been published at NeurIPS 2025</span>
-      <button class="announcement-close" onclick="closeBanner()" aria-label="Close banner">×</button>
+      <button class="announcement-close" onclick="closeBanner()" aria-label="Close banner">Ã—</button>
     </div>
   </div>
 
@@ -57,7 +57,11 @@
           <div class="menu-divider"></div>
         </div>
         <div class="menu-item">
-          <a href="/cdn-cgi/l/email-protection#6008050c0c0f2012051405050e014e0f1207" class="menu-link">Contact</a>
+          <a href="about.html" class="menu-link">About</a>
+          <div class="menu-divider"></div>
+        </div>
+        <div class="menu-item">
+          <a href="mailto:hello@reteena.org" class="menu-link">Contact</a>
           <div class="menu-divider"></div>
         </div>
       </nav>
@@ -80,7 +84,7 @@
     </filter>
   </svg>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     function closeBanner() {
       const banner = document.getElementById('neurips-banner');
       const header = document.getElementById('header');
@@ -160,14 +164,14 @@
         // Build navigation
         const prevNavHtml = prevPost ? `
           <a href="post.html?id=${prevPost.id}" class="blog-post-nav-link prev">
-            <span class="blog-post-nav-label">← Previous</span>
+            <span class="blog-post-nav-label">â† Previous</span>
             <div class="blog-post-nav-title">${prevPost.title}</div>
           </a>
         ` : '<div></div>';
 
         const nextNavHtml = nextPost ? `
           <a href="post.html?id=${nextPost.id}" class="blog-post-nav-link next">
-            <span class="blog-post-nav-label">Next →</span>
+            <span class="blog-post-nav-label">Next â†’</span>
             <div class="blog-post-nav-title">${nextPost.title}</div>
           </a>
         ` : '<div></div>';
@@ -254,4 +258,11 @@
       
       // Close menu with Escape key
       document.addEventListener('keydown', (e) => {
-        i
+        if (e.key === 'Escape' && menuOverlay.classList.contains('active')) {
+          closeMenu();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
