@@ -35,7 +35,7 @@
           <div class="glass-effect right"></div>
         </div>
         <div class="header-content">
-          <a href="index.html" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
+          <a href="/" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
           <div class="header-spacer"></div>
           <button class="burger-menu" id="burger-menu" aria-label="Menu">
             <span class="burger-line"></span>
@@ -53,11 +53,11 @@
       </button>
       <nav class="menu-nav">
         <div class="menu-item">
-          <a href="blog.html" class="menu-link">Blog</a>
+          <a href="/blog" class="menu-link">Blog</a>
           <div class="menu-divider"></div>
         </div>
         <div class="menu-item">
-          <a href="about.html" class="menu-link">About</a>
+          <a href="/about" class="menu-link">About</a>
           <div class="menu-divider"></div>
         </div>
         <div class="menu-item">
@@ -73,10 +73,10 @@
         <aside class="blog-sidebar">
           <h1 class="blog-main-title">Blog</h1>
           <nav class="blog-nav" id="blog-nav">
-            <a href="blog.html" class="blog-nav-link active" data-category="all">All Posts</a>
-            <a href="blog.html?category=product" class="blog-nav-link" data-category="product">Product</a>
-            <a href="blog.html?category=research" class="blog-nav-link" data-category="research">Research</a>
-            <a href="blog.html?category=company" class="blog-nav-link" data-category="company">Company</a>
+            <a href="/blog" class="blog-nav-link active" data-category="all">All Posts</a>
+            <a href="/blog?category=product" class="blog-nav-link" data-category="product">Product</a>
+            <a href="/blog?category=research" class="blog-nav-link" data-category="research">Research</a>
+            <a href="/blog?category=company" class="blog-nav-link" data-category="company">Company</a>
           </nav>
         </aside>
 
@@ -96,9 +96,9 @@
           <div class="footer-columns">
             <div class="footer-column">
               <h3 class="footer-column-header">Company</h3>
-              <a href="index.html" class="footer-link">Home</a>
-              <a href="blog.html" class="footer-link">Blog</a>
-              <a href="about.html" class="footer-link">About</a>
+              <a href="/" class="footer-link">Home</a>
+              <a href="/blog" class="footer-link">Blog</a>
+              <a href="/about" class="footer-link">About</a>
             </div>
             
             <div class="footer-column">
@@ -123,7 +123,7 @@
     </filter>
   </svg>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Close banner function
     function closeBanner() {
       const banner = document.getElementById('neurips-banner');
@@ -183,7 +183,7 @@
           const article = document.createElement('article');
           article.className = 'blog-post';
           article.innerHTML = `
-            <a href="post.html?id=${post.id}" class="blog-post-link">
+            <a href="/post?id=${post.id}" class="blog-post-link">
               <h2 class="blog-post-title">${post.title}</h2>
               <p class="blog-post-description">${post.description}</p>
               <div class="blog-post-meta">
@@ -236,11 +236,4 @@
       
       // Close menu with Escape key
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && menuOverlay.classList.contains('active')) {
-          closeMenu();
-        }
-      });
-    });
-  </script>
-</body>
-</html>
+        i
