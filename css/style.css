@@ -56,47 +56,6 @@ html {
   }
 }
 
-/* NeurIPS Announcement Banner */
-.neurips-banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  background: #000;
-  color: #fff;
-  z-index: 10001;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-family: 'Manrope', Arial, sans-serif;
-}
-
-.announcement-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-}
-
-.announcement-text {
-  display: inline-block;
-}
-
-.announcement-close {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 0;
-  line-height: 1;
-  opacity: 0.7;
-  transition: opacity 0.2s;
-}
-
-.announcement-close:hover {
-  opacity: 1;
-}
 
 .frame {
   margin: 0 auto;
@@ -426,68 +385,6 @@ main {
   max-width: 900px;
 }
 
-/* Supports Section */
-.supports-section {
-  margin-top: 32px;
-  width: 100%;
-  max-width: 900px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.supports-label {
-  font-size: 14px;
-  color: #666;
-  font-weight: 400;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.supports-scroll-container {
-  flex: 1;
-  overflow: hidden;
-  position: relative;
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 20%,
-    black 80%,
-    transparent
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 20%,
-    black 80%,
-    transparent
-  );
-}
-
-.supports-scroll {
-  display: flex;
-  gap: 40px;
-  animation: scroll 20s linear infinite;
-  width: fit-content;
-}
-
-.support-org {
-  font-size: 14px;
-  color: #999;
-  font-weight: 400;
-  letter-spacing: 1.5px;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
 .divider { 
   border: none; 
@@ -683,21 +580,8 @@ main {
 
 /* Mobile responsive */
 @media screen and (max-width: 780px) {
-  body {
-    margin-top: 32px;
-  }
-
-  .neurips-banner {
-    font-size: 13px;
-    padding: 7px 16px;
-  }
-
-  .announcement-close {
-    font-size: 18px;
-  }
-
   .header {
-    top: 32px;
+    top: 0;
   }
 
   .header-content {
@@ -745,12 +629,6 @@ main {
 
   .subtitle {
     font-size: 16px;
-  }
-
-  .supports-section {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
   }
 
   .project-title {

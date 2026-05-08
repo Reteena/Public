@@ -15,14 +15,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- NeurIPS Banner -->
-  <div class="neurips-banner" id="neurips-banner">
-    <div class="announcement-content">
-      <span class="announcement-text">We're excited to announce our paper has been published at NeurIPS 2025</span>
-      <button class="announcement-close" onclick="closeBanner()" aria-label="Close banner">×</button>
-    </div>
-  </div>
-
   <div class="frame">
     <header id="header" class="header">
       <div class="header-container">
@@ -34,7 +26,7 @@
           <div class="glass-effect right"></div>
         </div>
         <div class="header-content">
-          <a href="index.html" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
+          <a href="/" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
           <div class="header-spacer"></div>
           <button class="burger-menu" id="burger-menu" aria-label="Menu">
             <span class="burger-line"></span>
@@ -52,11 +44,11 @@
       </button>
       <nav class="menu-nav">
         <div class="menu-item">
-          <a href="blog.html" class="menu-link">Blog</a>
+          <a href="/blog" class="menu-link">Blog</a>
           <div class="menu-divider"></div>
         </div>
         <div class="menu-item">
-          <a href="about.html" class="menu-link">About</a>
+          <a href="/about" class="menu-link">About</a>
           <div class="menu-divider"></div>
         </div>
         <div class="menu-item">
@@ -76,18 +68,6 @@
       <section class="content-section">
         <section class="intro scroll-fade">
           <p class="subtitle">Reteena is an applied AI lab developing multimodal<br> neurodegenerative diagnostic models with high computational efficiency.</p>
-          
-          <div class="supports-section">
-            <span class="supports-label">supports from</span>
-            <div class="supports-scroll-container">
-              <div class="supports-scroll">
-                <span class="support-org">JOHNS HOPKINS PAVA CENTER</span>
-                <span class="support-org">MICROSOFT STARTUP PROGRAM</span>
-                <span class="support-org">JOHNS HOPKINS PAVA CENTER</span>
-                <span class="support-org">MICROSOFT STARTUP PROGRAM</span>
-              </div>
-            </div>
-          </div>
         </section>
         
         <hr class="divider scroll-fade" />
@@ -184,9 +164,9 @@
             <div class="footer-columns">
               <div class="footer-column">
                 <h3 class="footer-column-header">Company</h3>
-                <a href="index.html" class="footer-link">Home</a>
-                <a href="blog.html" class="footer-link">Blog</a>
-                <a href="about.html" class="footer-link">About</a>
+                <a href="/" class="footer-link">Home</a>
+                <a href="/blog" class="footer-link">Blog</a>
+                <a href="/about" class="footer-link">About</a>
               </div>
               
               <div class="footer-column">
@@ -213,27 +193,6 @@
   </svg>
 
   <script>
-    // Close banner function
-    function closeBanner() {
-      const banner = document.getElementById('neurips-banner');
-      const header = document.getElementById('header');
-      banner.style.display = 'none';
-      header.style.top = '0';
-      document.body.style.marginTop = '0';
-      localStorage.setItem('bannerClosed', 'true');
-    }
-
-    // Check if banner was previously closed
-    if (localStorage.getItem('bannerClosed') === 'true') {
-      document.addEventListener('DOMContentLoaded', () => {
-        const banner = document.getElementById('neurips-banner');
-        const header = document.getElementById('header');
-        banner.style.display = 'none';
-        header.style.top = '0';
-        document.body.style.marginTop = '0';
-      });
-    }
-
     // Add scroll effect for header
     window.addEventListener('scroll', function() {
       const header = document.getElementById('header');

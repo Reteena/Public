@@ -4,26 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog | Reteena</title>
-  <link rel="icon" type="image/png" href="image/favicon.png">
-  <link rel="shortcut icon" type="image/png" href="image/favicon.png">
-  <link rel="apple-touch-icon" href="image/favicon.png">
+  <link rel="icon" type="image/png" href="../image/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="../image/favicon.png">
+  <link rel="apple-touch-icon" href="../image/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/blog-style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/blog-style.css">
 </head>
 <body>
-  <!-- NeurIPS Banner -->
-  <div class="neurips-banner" id="neurips-banner">
-    <div class="announcement-content">
-      <span class="announcement-text">We're excited to announce our paper has been published at NeurIPS 2025</span>
-      <button class="announcement-close" onclick="closeBanner()" aria-label="Close banner">×</button>
-    </div>
-  </div>
-
   <div class="frame">
     <header id="header" class="header">
       <div class="header-container">
@@ -35,7 +27,7 @@
           <div class="glass-effect right"></div>
         </div>
         <div class="header-content">
-          <a href="index.html" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
+          <a href="/" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
           <div class="header-spacer"></div>
           <button class="burger-menu" id="burger-menu" aria-label="Menu">
             <span class="burger-line"></span>
@@ -53,11 +45,11 @@
       </button>
       <nav class="menu-nav">
         <div class="menu-item">
-          <a href="blog.html" class="menu-link">Blog</a>
+          <a href="/blog" class="menu-link">Blog</a>
           <div class="menu-divider"></div>
         </div>
         <div class="menu-item">
-          <a href="about.html" class="menu-link">About</a>
+          <a href="/about" class="menu-link">About</a>
           <div class="menu-divider"></div>
         </div>
         <div class="menu-item">
@@ -73,10 +65,10 @@
         <aside class="blog-sidebar">
           <h1 class="blog-main-title">Blog</h1>
           <nav class="blog-nav" id="blog-nav">
-            <a href="blog.html" class="blog-nav-link active" data-category="all">All Posts</a>
-            <a href="blog.html?category=product" class="blog-nav-link" data-category="product">Product</a>
-            <a href="blog.html?category=research" class="blog-nav-link" data-category="research">Research</a>
-            <a href="blog.html?category=company" class="blog-nav-link" data-category="company">Company</a>
+            <a href="/blog" class="blog-nav-link active" data-category="all">All Posts</a>
+            <a href="/blog?category=product" class="blog-nav-link" data-category="product">Product</a>
+            <a href="/blog?category=research" class="blog-nav-link" data-category="research">Research</a>
+            <a href="/blog?category=company" class="blog-nav-link" data-category="company">Company</a>
           </nav>
         </aside>
 
@@ -96,9 +88,9 @@
           <div class="footer-columns">
             <div class="footer-column">
               <h3 class="footer-column-header">Company</h3>
-              <a href="index.html" class="footer-link">Home</a>
-              <a href="blog.html" class="footer-link">Blog</a>
-              <a href="about.html" class="footer-link">About</a>
+              <a href="/" class="footer-link">Home</a>
+              <a href="/blog" class="footer-link">Blog</a>
+              <a href="/about" class="footer-link">About</a>
             </div>
             
             <div class="footer-column">
@@ -124,27 +116,6 @@
   </svg>
 
   <script>
-    // Close banner function
-    function closeBanner() {
-      const banner = document.getElementById('neurips-banner');
-      const header = document.getElementById('header');
-      banner.style.display = 'none';
-      header.style.top = '0';
-      document.body.style.marginTop = '0';
-      localStorage.setItem('bannerClosed', 'true');
-    }
-
-    // Check if banner was previously closed
-    if (localStorage.getItem('bannerClosed') === 'true') {
-      document.addEventListener('DOMContentLoaded', () => {
-        const banner = document.getElementById('neurips-banner');
-        const header = document.getElementById('header');
-        banner.style.display = 'none';
-        header.style.top = '0';
-        document.body.style.marginTop = '0';
-      });
-    }
-
     // Add scroll effect for header
     window.addEventListener('scroll', function() {
       const header = document.getElementById('header');
@@ -158,7 +129,7 @@
     // Load blog posts from JSON
     async function loadBlogPosts() {
       try {
-        const response = await fetch('data/blog-data.json');
+        const response = await fetch('../data/blog-data.json');
         const data = await response.json();
         const urlParams = new URLSearchParams(window.location.search);
         const category = urlParams.get('category') || 'all';
@@ -183,7 +154,7 @@
           const article = document.createElement('article');
           article.className = 'blog-post';
           article.innerHTML = `
-            <a href="post.html?id=${post.id}" class="blog-post-link">
+            <a href="/post?id=${post.id}" class="blog-post-link">
               <h2 class="blog-post-title">${post.title}</h2>
               <p class="blog-post-description">${post.description}</p>
               <div class="blog-post-meta">
