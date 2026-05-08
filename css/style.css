@@ -332,13 +332,15 @@ html {
 
 /* Hero Section - Full viewport height */
 .hero-section {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 8vw;
   box-sizing: border-box;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 0;
   overflow: hidden;
 }
 
@@ -356,6 +358,9 @@ html {
 .content-section {
   padding: 0 8vw 0 8vw;
   box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  background: #fff;
 }
 
 /* Main content */
