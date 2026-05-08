@@ -395,13 +395,6 @@ main {
   margin-right: auto;
 }
 
-.project-card {
-  position: sticky;
-  top: 80px;
-  background: #fff;
-  padding-bottom: 48px;
-  box-shadow: 0 -8px 32px rgba(0,0,0,0.06);
-}
 
 .project {
   margin-bottom: 64px;
