@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reteena</title>
+  <meta name="description" content="Reteena is a research community exploring AI, brain health, and healthy longevity. Discover our projects and build with us.">
   <link rel="icon" type="image/png" href="image/favicon.png">
   <link rel="shortcut icon" type="image/png" href="image/favicon.png">
   <link rel="apple-touch-icon" href="image/favicon.png">
@@ -13,8 +14,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
-<body>
+<body class="home-page">
   <div class="frame">
     <header id="header" class="header">
       <div class="header-container">
@@ -28,6 +30,11 @@
         <div class="header-content">
           <a href="/" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
           <div class="header-spacer"></div>
+          <nav class="header-nav" aria-label="Main navigation">
+            <a href="#research">Research</a>
+            <a href="/blog">Journal</a>
+            <a href="mailto:hello@reteena.org">Get in touch <span aria-hidden="true">↗</span></a>
+          </nav>
           <button class="burger-menu" id="burger-menu" aria-label="Menu">
             <span class="burger-line"></span>
             <span class="burger-line"></span>
@@ -44,6 +51,10 @@
       </button>
       <nav class="menu-nav">
         <div class="menu-item">
+          <a href="#research" class="menu-link">Research</a>
+          <div class="menu-divider"></div>
+        </div>
+        <div class="menu-item">
           <a href="/blog" class="menu-link">Blog</a>
           <div class="menu-divider"></div>
         </div>
@@ -53,22 +64,53 @@
         </div>
       </nav>
     </div>
-    
+
     <main>
       <!-- Hero Section - Visible on Load -->
-      <section class="hero-section">
-        <h1 class="hero-title fade-in">Healthy Longevity with<br>Dignity and Identity</h1>
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-copy fade-in">
+          <p class="hero-eyebrow"><span aria-hidden="true"></span> A research community</p>
+          <h1 class="hero-title" id="hero-title">A longer life.<br>A more <em>human</em> one.</h1>
+          <p class="hero-description">We’re Reteena, a research community exploring AI and brain health. We build together for healthy longevity, dignity, and identity.</p>
+          <div class="hero-actions">
+            <a class="hero-button" href="#research">Explore our research <span aria-hidden="true">↘</span></a>
+            <a class="hero-contact" href="mailto:hello@reteena.org">Build with us <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-projects fade-in">
+          <div class="hero-projects-heading"><span>A few things we’re working on</span><span class="hero-projects-note">Ideas into practice</span></div>
+          <div class="hero-card-grid">
+            <a class="hero-card" href="#remembrance">
+              <div class="hero-card-image"><img src="image/image1.png" alt="" width="480" height="270"></div>
+              <div class="hero-card-body"><span class="hero-card-category">Memory &amp; identity</span><h2>Remembrance <span aria-hidden="true">↗</span></h2><p>Keeping life stories connected.</p></div>
+            </a>
+            <a class="hero-card" href="#low-field-mri">
+              <div class="hero-card-image"><img src="image/image2.png" alt="" width="480" height="270"></div>
+              <div class="hero-card-body"><span class="hero-card-category">Accessible neuroimaging</span><h2>Low Field MRI <span aria-hidden="true">↗</span></h2><p>A clearer picture of brain health.</p></div>
+            </a>
+            <a class="hero-card" href="#lark">
+              <div class="hero-card-image"><img src="image/image3.png" alt="" width="480" height="270"></div>
+              <div class="hero-card-body"><span class="hero-card-category">Collective intelligence</span><h2>Lark <span aria-hidden="true">↗</span></h2><p>Making decisions with more perspectives.</p></div>
+            </a>
+            <a class="hero-card" href="#geneattentionnet">
+              <div class="hero-card-image"><img src="image/image4.png" alt="" width="480" height="270"></div>
+              <div class="hero-card-body"><span class="hero-card-category">Genomics &amp; learning</span><h2>GeneAttentionNet <span aria-hidden="true">↗</span></h2><p>Understanding the signals within.</p></div>
+            </a>
+          </div>
+        </div>
       </section>
-      
+
       <!-- Content Section - Visible on Scroll -->
-      <section class="content-section">
+      <section class="content-section" id="research" aria-labelledby="research-title">
         <section class="intro scroll-fade">
-          <p class="subtitle">Reteena is an applied AI lab developing multimodal<br> neurodegenerative diagnostic models with high computational efficiency.</p>
+          <p class="section-eyebrow">Shared curiosity. Thoughtful research.</p>
+          <h2 id="research-title">Built together, for better lives.</h2>
+          <p class="subtitle">Our work connects machine learning, neuroscience, and care—exploring how efficient AI can help us understand brain health and preserve what makes us human.</p>
         </section>
-        
+
         <div class="project-card">
           <hr class="divider" />
-          <section class="project scroll-fade">
+          <section class="project scroll-fade" id="remembrance">
             <img src="image/image1.png" alt="Remembrance project illustration">
 
             <span class="project-index">01</span>
@@ -90,7 +132,7 @@
 
         <div class="project-card">
           <hr class="divider" />
-          <section class="project scroll-fade">
+          <section class="project scroll-fade" id="low-field-mri">
             <img src="image/image2.png" alt="Low Field MRI Framework project illustration">
 
             <span class="project-index">02</span>
@@ -112,7 +154,7 @@
 
         <div class="project-card">
           <hr class="divider" />
-          <section class="project scroll-fade">
+          <section class="project scroll-fade" id="lark">
             <img src="image/image3.png" alt="Lark Multi-Stakeholder LLM Agents project illustration">
 
             <span class="project-index">03</span>
@@ -134,7 +176,7 @@
 
         <div class="project-card">
           <hr class="divider" />
-          <section class="project scroll-fade">
+          <section class="project scroll-fade" id="geneattentionnet">
             <img src="image/image4.png" alt="GeneAttentionNet project illustration">
 
             <span class="project-index">04</span>
@@ -153,21 +195,21 @@
             </div>
           </section>
         </div>
-        
+
         <footer class="footer-section scroll-fade">
           <div class="footer-divider"></div>
           <div class="footer-container">
             <div class="footer-brand">
               <h2 class="footer-logo">Reteena</h2>
             </div>
-            
+
             <div class="footer-columns">
               <div class="footer-column">
-                <h3 class="footer-column-header">Company</h3>
+                <h3 class="footer-column-header">Community</h3>
                 <a href="/" class="footer-link">Home</a>
                 <a href="/blog" class="footer-link">Blog</a>
               </div>
-              
+
               <div class="footer-column">
                 <h3 class="footer-column-header">Socials</h3>
                 <a href="https://linkedin.com/company/reteena" target="_blank" class="footer-link">LinkedIn</a>
@@ -175,7 +217,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="footer-bottom">
             <p class="footer-copyright">© 2026 Copyright. All Rights Reserved.</p>
           </div>
@@ -207,27 +249,28 @@
       const burgerMenu = document.getElementById('burger-menu');
       const menuOverlay = document.getElementById('menu-overlay');
       const menuClose = document.getElementById('menu-close');
-      
+
       function openMenu() {
         menuOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';
       }
-      
+
       function closeMenu() {
         menuOverlay.classList.remove('active');
         document.body.style.overflow = '';
       }
-      
+
       burgerMenu.addEventListener('click', openMenu);
       menuClose.addEventListener('click', closeMenu);
-      
+      menuOverlay.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+
       // Close menu when clicking outside
       menuOverlay.addEventListener('click', (e) => {
         if (e.target === menuOverlay) {
           closeMenu();
         }
       });
-      
+
       // Close menu with Escape key
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && menuOverlay.classList.contains('active')) {
