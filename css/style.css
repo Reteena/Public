@@ -330,27 +330,7 @@ html {
   margin: 6px 0 12px 0;
 }
 
-/* Hero Section - Full viewport height */
-.hero-section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 8vw;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-title {
-  font-family: 'Inria Serif', serif;
-  font-size: clamp(36px, 5vw, 64px);
-  font-weight: 400;
-  line-height: 1.2;
-  text-align: center;
-  margin: 0;
-  color: #111;
-}
+/* Hero layout lives in css/hero.css */
 
 /* Content Section - Appears on scroll */
 .content-section {
@@ -616,14 +596,6 @@ main {
     margin: 4px 0 10px 0;
   }
 
-  .hero-section {
-    padding: 0 5vw;
-  }
-
-  .hero-title {
-    font-size: clamp(28px, 8vw, 48px);
-  }
-
   .content-section {
     padding: 0 5vw 0 5vw;
   }
@@ -665,10 +637,6 @@ main {
 @media screen and (min-width: 781px) and (max-width: 1024px) {
   .header-content {
     padding: 20px 6vw;
-  }
-
-  .hero-section {
-    padding: 0 6vw;
   }
 
   .content-section {
