@@ -120,7 +120,7 @@
   outline-offset: 6px;
 }
 
-:is(#nrdo, #lark, #trident) {
+:is(#work, #nrdo, #lark, #trident) {
   scroll-margin-top: 100px;
 }
 
