@@ -9,7 +9,8 @@
   <link rel="apple-touch-icon" href="image/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/hero.css">
 </head>
@@ -37,68 +38,80 @@
         <div class="hero-content">
           <h1 id="hero-title" class="hero-brand">Reteena</h1>
           <p class="hero-tagline">For a better brain &amp; mind.</p>
-          <a class="hero-cta" href="#work">See what we&rsquo;re building</a>
+          <a class="hero-cta" href="#trident">Explore our research</a>
         </div>
       </section>
 
       <!-- Content Section - Visible on Scroll -->
       <section class="content-section">
         <section class="intro scroll-fade">
-          <p class="subtitle">We build efficient AI to understand and diagnose the brain.</p>
+          <p class="subtitle">Reteena is an applied AI community developing multimodal<br> neurodegenerative diagnostic models with high computational efficiency.</p>
         </section>
 
-        <div id="work" class="work">
-          <div class="project-card">
-            <hr class="divider" />
-            <section class="project scroll-fade" id="nrdo">
-              <img src="image/image2.png" alt="NRDO product illustration">
+        <div class="project-card">
+          <hr class="divider" />
+          <section class="project scroll-fade" id="trident">
+            <img src="image/image4.png" alt="TRIDENT project illustration">
 
-              <div class="project-meta">
-                <span class="project-title">NRDO</span>
-                <span class="project-status">Published</span>
-              </div>
+            <span class="project-index">01</span>
+            <div class="project-meta">
+              <span class="project-title">TRIDENT</span>
+              <span class="project-collaboration">In Progress</span>
+            </div>
 
-              <p class="project-description">
-                Physics-aware tumor simulation that runs in real time. NRDO models how disease spreads through heterogeneous tissue—fast enough for treatment planning, not just overnight batch jobs.
-              </p>
+            <p class="project-description">
+              TRIDENT is personalized neural decoding for motor intent—mapping an individual’s neural activity to movement-related signals with models tuned to that person. The goal is reliable, efficient readout for motor interfaces and clinical workflows, not one-size-fits-all decoding.
+            </p>
 
-              <div class="project-footer">
-                <a class="project-link" href="https://openreview.net/forum?id=05dkGJ3rVO" target="_blank" rel="noopener noreferrer">OpenReview</a>
-              </div>
-            </section>
-          </div>
+            <div class="project-footer">
+              <span class="project-link"><i class="fa-solid fa-link"></i>Neural Decoding</span>
+              <span class="project-tags"><i class="fa-solid fa-tags"></i> Neural Decoding, Motor, Personalized AI</span>
+            </div>
+          </section>
+        </div>
 
-          <div class="project-card">
-            <hr class="divider" />
-            <section class="project scroll-fade" id="lark">
-              <img src="image/image3.png" alt="Lark product illustration">
+        <div class="project-card">
+          <hr class="divider" />
+          <section class="project scroll-fade" id="lark">
+            <img src="image/image3.png" alt="Lark Multi-Stakeholder LLM Agents project illustration">
 
-              <div class="project-meta">
-                <span class="project-title">Lark</span>
-                <span class="project-status">Live</span>
-              </div>
+            <span class="project-index">02</span>
+            <div class="project-meta">
+              <span class="project-title">Lark Multi-Stakeholder LLM Agents</span>
+              <span class="project-collaboration">NeurIPS Workshop 2025 Publication</span>
+            </div>
 
-              <p class="project-description">
-                Multi-stakeholder decision agents that keep competing priorities visible. Lark weighs trade-offs across viewpoints instead of collapsing every choice into a single answer.
-              </p>
-            </section>
-          </div>
+            <p class="project-description">
+              Lark is a biologically inspired decision-making framework that pairs LLM reasoning with an evolutionary, stakeholder-aware multi-agent system. Plasticity, duplication and maturation, ranked-choice aggregation, and compute-aware optimization produce concise strategies that balance competing priorities without collapsing into a single viewpoint.
+            </p>
 
-          <div class="project-card">
-            <hr class="divider" />
-            <section class="project scroll-fade" id="trident">
-              <img src="image/image4.png" alt="TRIDENT product illustration">
+            <div class="project-footer">
+              <span class="project-link"><i class="fa-solid fa-link"></i>NeurIPS Workshop 2025</span>
+              <span class="project-tags"><i class="fa-solid fa-tags"></i> Multi-Agent Systems, LLM, Decision Making</span>
+            </div>
+          </section>
+        </div>
 
-              <div class="project-meta">
-                <span class="project-title">TRIDENT</span>
-                <span class="project-status">In progress</span>
-              </div>
+        <div class="project-card">
+          <hr class="divider" />
+          <section class="project scroll-fade" id="nrdo">
+            <img src="image/image2.png" alt="NRDO project illustration">
 
-              <p class="project-description">
-                Neural decoding that turns brain signals into clear, clinically useful readouts—built for real diagnostic workflows, not just the lab bench.
-              </p>
-            </section>
-          </div>
+            <span class="project-index">03</span>
+            <div class="project-meta">
+              <span class="project-title">NRDO</span>
+              <span class="project-collaboration">OpenReview Preprint</span>
+            </div>
+
+            <p class="project-description">
+              Graph-based spatial-transcriptomics models often universally tie predictions over measured spots, which leaves expression undefined between any two nodes. Neural Reaction–Diffusion Operators (NRDO) encode irregular samples into a continuous latent field, evolve it under a learned anisotropic reaction–diffusion equation, and decode expression at arbitrary coordinates. Via Strang splitting, the solver integrates diffusion exactly in the Fourier domain to provide stable, second-order schemes. Across 22 sections from four technologies, NRDO improves masked-region reconstruction over graph, Gaussian-process, neural-field, and imputation baselines. These improvements also survive Holm correction against 4 of 7 baselines, one of which also includes a graph model. Parameter-matched controls attribute the gains to operator structure rather than increased model capacity, and improvements increase with gene-level spatial autocorrelation and vanish for genes that lack spatial structure. We prove that a single stationary snapshot constrains the reaction network to only a Lebesgue-null subset of latent space, which bounds any method of this class that could identify from static tissue. Two limitations remain: comparison against the strongest graph baseline is limited by available specimens, and predicted fields are smoother than the measurements.
+            </p>
+
+            <div class="project-footer">
+              <a class="project-link" href="https://openreview.net/forum?id=05dkGJ3rVO" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i>OpenReview</a>
+              <span class="project-tags"><i class="fa-solid fa-tags"></i> Spatial Transcriptomics, Neural Operators, PDEs</span>
+            </div>
+          </section>
         </div>
 
         <footer class="footer-section scroll-fade">
