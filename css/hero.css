@@ -120,7 +120,7 @@
   outline-offset: 6px;
 }
 
-:is(#low-field-mri, #lark, #geneattentionnet, #nrdo, #trident) {
+:is(#nrdo, #lark, #trident) {
   scroll-margin-top: 100px;
 }
 
