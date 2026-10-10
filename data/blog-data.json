@@ -1,55 +1,67 @@
 {
   "posts": [
     {
-      "id": "remembrance",
-      "title": "Memory Companion for Alzheimer's Patients",
-      "description": "Remembrance is an AI model delivering reminiscence therapy for Alzheimer’s patients",
-      "category": "product",
-      "date": "January 15, 2026",
-      "author": "Reteena Team",
-      "image": "image/remembrance.png",
-      "toc": [
-        { "id": "motivation", "title": "Understanding patient grief" },
-        { "id": "approach", "title": "Reminiscence therapy design" },
-        { "id": "technology", "title": "Knowledge graph architecture" }
-      ],
-      "content": [
-        { "type": "heading", "id": "motivation", "text": "Understanding patient grief" },
-        { "type": "paragraph", "text": "Most conventional interventions for patients facing terminal illness or cognitive decline focus on managing physical symptoms and providing traditional counseling. While valuable, they often miss what patients and families actually grieve. Through extensive conversations with patients, caregivers, and healthcare providers, a profound pattern emerged: what people mourn is not simply the loss of life itself, but the erosion of shared moments, inside jokes that defined relationships, humorous nicknames carrying decades of affection, and the gradual disappearance of countless small interactions that constitute the texture of human connection." },
-        { "type": "paragraph", "text": "Traditional reminiscence therapy, while effective, faces practical limitations. It typically requires trained facilitators, making it expensive and available primarily in institutional settings. Sessions are time-limited and infrequent. The unstructured nature of conversation means important memories may never surface if the right prompts are not provided. Documentation often consists of simple notes capturing only a fraction of the conversation’s richness. These limitations suggested that technology, thoughtfully applied with respect for the deeply personal nature of the work, could enhance the reach and impact of reminiscence therapy." },
-        { "type": "heading", "id": "approach", "text": "Reminiscence therapy design" },
-        { "type": "paragraph", "text": "Remembrance provides AI-assisted reminiscence therapy combining professional facilitation benefits with technological accessibility and persistence. Rather than asking broad questions that might overwhelm patients with cognitive impairment, the system uses carefully designed progressions of specific, focused prompts that scaffold memory recall and reduce cognitive burden over time. These prompts are personalized based on family-provided information about specific people, places, and time periods relevant to the patient’s life. The conversational interface avoids technical jargon or complex interactions that might frustrate patients with varying levels of technological literacy or cognitive capacity." },
-        { "type": "paragraph", "text": "The prompting strategy reflects deep consideration of how memory works and how to support recall in patients with cognitive challenges. Rather than asking patients to generate memories unprompted, the system provides specific cues that activate relevant memory networks and reduce anxiety during recall. For example, instead of asking about a general relationship, Remembrance might prompt with specific contexts like meals shared together, holiday traditions, or particular locations associated with positive memories. When a memory begins to emerge, follow-up questions help patients elaborate, gently guiding them to include sensory details, emotional responses, and the reactions of others present." },
-        { "type": "paragraph", "text": "Family involvement serves both practical and therapeutic purposes. Practically, family members provide essential context and personalization information making prompts relevant and meaningful. They can participate in joint reminiscence sessions where multiple perspectives on shared memories are captured, often leading to richer narratives as participants fill in details others had forgotten. Therapeutically, collaborating on memory work provides structured, meaningful interaction time focused on positive shared history rather than illness management or caregiving tasks, helping shift family dynamics toward recognizing the patient as a person with rich history rather than simply a set of care needs." },
-        { "type": "heading", "id": "technology", "text": "Knowledge graph architecture" },
-        { "type": "paragraph", "text": "Memories captured through Remembrance are stored not as simple text documents but as interconnected data in a knowledge graph structure reflecting consideration of how human memory actually works. Human memory is not a filing cabinet where experiences are stored in separate folders, but a richly interconnected network where each memory connects to many others through relationships. Remembering one event often triggers recall of related events because they share participants, locations, emotional tones, or thematic elements. The knowledge graph mimics this associative structure by representing memories as nodes with relationships linking them to other memories, people, places, time periods, and themes." },
-        { "type": "paragraph", "text": "This graph structure enables intelligent memory traversal where the system can guide patients through their memory landscape along meaningful pathways. Rather than presenting isolated prompts, Remembrance can follow threads of association, asking patients to elaborate on people or places mentioned in one memory by recalling other memories involving those same elements. For family members reviewing captured memories, the graph structure enables exploration through multiple pathways: chronologically to understand life progression, by person to see all memories involving a particular family member, by location to recall a childhood home, or by theme to find all memories involving humor, challenge, or triumph." },
-        { "type": "paragraph", "text": "The technical implementation involves natural language processing to extract entities, relationships, and themes from conversational memory sharing. When a patient describes a memory, the system identifies key elements such as people mentioned, locations, time indicators, activities, and emotional content. These extracted elements become nodes and edges in the knowledge graph, automatically creating links to existing nodes when the same elements appear across memories. Privacy and data sensitivity are paramount. All memory data is encrypted in transit and at rest, with access strictly controlled and limited to authorized family members. The system includes granular privacy controls allowing patients to designate certain memories as private, recognizing these represent intimate and precious information people possess." }
-      ]
-    },
-    {
       "id": "low-field-mri",
       "title": "Accessible Alzheimer's Diagnosis",
-      "description": "Enhances low field MRI for Alzheimer’s diagnosis using deep learning brain segmentation and volumetric analysis.",
+      "description": "Enhances low field MRI for Alzheimer\u2019s diagnosis using deep learning brain segmentation and volumetric analysis.",
       "category": "research",
       "date": "December 10, 2024",
-      "author": "Aarav Minocha, Ivan Ma, Jainish Patel, Seungyong Yang",
+      "author": "Reteena Team",
       "image": "image/lowfield.png",
       "toc": [
-        { "id": "introduction", "title": "Introduction" },
-        { "id": "methodology", "title": "Methodology" },
-        { "id": "results", "title": "Results" }
+        {
+          "id": "introduction",
+          "title": "Introduction"
+        },
+        {
+          "id": "methodology",
+          "title": "Methodology"
+        },
+        {
+          "id": "results",
+          "title": "Results"
+        }
       ],
       "content": [
-        { "type": "heading", "id": "introduction", "text": "Introduction" },
-        { "type": "paragraph", "text": "Access to advanced neuroimaging remains a critical barrier in Alzheimer’s diagnosis, particularly in resource-limited settings. High-field MRI scanners, while providing excellent image quality, require significant capital investment, specialized infrastructure, and ongoing maintenance costs that place them out of reach for many healthcare facilities. This creates a diagnostic disparity where early detection and monitoring of neurodegenerative disease depend on geographic and economic factors rather than medical need." },
-        { "type": "paragraph", "text": "Our Low Field MRI Framework addresses this challenge by demonstrating that clinically meaningful Alzheimer’s diagnosis can be achieved using affordable, low-strength scanners through intelligent application of modern deep learning techniques. By compensating for the inherently lower signal-to-noise ratio of low-field imaging through sophisticated computational methods, we preserve the diagnostic information critical for detecting structural brain changes associated with neurodegeneration while dramatically reducing the cost and complexity of the imaging system required." },
-        { "type": "heading", "id": "methodology", "text": "Methodology" },
-        { "type": "paragraph", "text": "The framework employs a multi-stage deep learning pipeline specifically designed to address the unique challenges of low-field MRI data. Initial preprocessing includes advanced noise reduction and artifact correction tailored to the characteristic noise patterns of low-field imaging. The segmentation network architecture incorporates domain knowledge about brain anatomy, using attention mechanisms to focus computational resources on regions most relevant for Alzheimer's diagnosis such as the hippocampus, entorhinal cortex, and other structures known to show early atrophy in neurodegenerative disease." },
-        { "type": "paragraph", "text": "Volumetric analysis extracts clinically relevant measurements from the segmented brain structures, computing not just absolute volumes but also normalized metrics that account for individual variation in brain size and demographic factors. The classification component integrates these structural measurements with patient metadata to generate diagnostic predictions, achieving 96% accuracy comparable to analysis of high-field MRI scans in controlled clinical settings. Critically, the system maintains interpretability by providing clinicians with both the diagnostic classification and the underlying volumetric measurements that informed it, allowing medical professionals to understand and validate the automated analysis." },
-        { "type": "heading", "id": "results", "text": "Results and Impact" },
-        { "type": "paragraph", "text": "Published at IEEE BigData 2024, this work demonstrates that the diagnostic gap between high-field and low-field MRI can be substantially closed through the intelligent and careful application of deep learning methods. By enabling accurate Alzheimer’s diagnosis on scanners costing a fraction of conventional systems, the framework has the potential to expand access to neuroimaging-based diagnosis to community hospitals, rural clinics, and healthcare systems in developing countries worldwide. This democratization of diagnostic capability could enable earlier intervention, better disease monitoring, and more equitable access to clinical trials and emerging therapies that depend on imaging-confirmed diagnosis." },
-        { "type": "paragraph", "text": "The open-source release of the framework, including trained models and processing pipelines, facilitates broad adoption and further refinement by the research and clinical communities worldwide. Ongoing work focuses on expanding the system to detect additional neurodegenerative conditions, incorporating longitudinal analysis for precise disease progression monitoring, and validating performance across diverse scanner types and patient populations to ensure robust real-world clinical deployment." }
+        {
+          "type": "heading",
+          "id": "introduction",
+          "text": "Introduction"
+        },
+        {
+          "type": "paragraph",
+          "text": "Access to advanced neuroimaging remains a critical barrier in Alzheimer\u2019s diagnosis, particularly in resource-limited settings. High-field MRI scanners, while providing excellent image quality, require significant capital investment, specialized infrastructure, and ongoing maintenance costs that place them out of reach for many healthcare facilities. This creates a diagnostic disparity where early detection and monitoring of neurodegenerative disease depend on geographic and economic factors rather than medical need."
+        },
+        {
+          "type": "paragraph",
+          "text": "Our Low Field MRI Framework addresses this challenge by demonstrating that clinically meaningful Alzheimer\u2019s diagnosis can be achieved using affordable, low-strength scanners through intelligent application of modern deep learning techniques. By compensating for the inherently lower signal-to-noise ratio of low-field imaging through sophisticated computational methods, we preserve the diagnostic information critical for detecting structural brain changes associated with neurodegeneration while dramatically reducing the cost and complexity of the imaging system required."
+        },
+        {
+          "type": "heading",
+          "id": "methodology",
+          "text": "Methodology"
+        },
+        {
+          "type": "paragraph",
+          "text": "The framework employs a multi-stage deep learning pipeline specifically designed to address the unique challenges of low-field MRI data. Initial preprocessing includes advanced noise reduction and artifact correction tailored to the characteristic noise patterns of low-field imaging. The segmentation network architecture incorporates domain knowledge about brain anatomy, using attention mechanisms to focus computational resources on regions most relevant for Alzheimer's diagnosis such as the hippocampus, entorhinal cortex, and other structures known to show early atrophy in neurodegenerative disease."
+        },
+        {
+          "type": "paragraph",
+          "text": "Volumetric analysis extracts clinically relevant measurements from the segmented brain structures, computing not just absolute volumes but also normalized metrics that account for individual variation in brain size and demographic factors. The classification component integrates these structural measurements with patient metadata to generate diagnostic predictions, achieving 96% accuracy comparable to analysis of high-field MRI scans in controlled clinical settings. Critically, the system maintains interpretability by providing clinicians with both the diagnostic classification and the underlying volumetric measurements that informed it, allowing medical professionals to understand and validate the automated analysis."
+        },
+        {
+          "type": "heading",
+          "id": "results",
+          "text": "Results and Impact"
+        },
+        {
+          "type": "paragraph",
+          "text": "Published at IEEE BigData 2024, this work demonstrates that the diagnostic gap between high-field and low-field MRI can be substantially closed through the intelligent and careful application of deep learning methods. By enabling accurate Alzheimer\u2019s diagnosis on scanners costing a fraction of conventional systems, the framework has the potential to expand access to neuroimaging-based diagnosis to community hospitals, rural clinics, and healthcare systems in developing countries worldwide. This democratization of diagnostic capability could enable earlier intervention, better disease monitoring, and more equitable access to clinical trials and emerging therapies that depend on imaging-confirmed diagnosis."
+        },
+        {
+          "type": "paragraph",
+          "text": "The open-source release of the framework, including trained models and processing pipelines, facilitates broad adoption and further refinement by the research and clinical communities worldwide. Ongoing work focuses on expanding the system to detect additional neurodegenerative conditions, incorporating longitudinal analysis for precise disease progression monitoring, and validating performance across diverse scanner types and patient populations to ensure robust real-world clinical deployment."
+        }
       ]
     },
     {
@@ -58,23 +70,62 @@
       "description": "A biologically inspired decision making framework combining LLM reasoning with stakeholder aware multi agent systems",
       "category": "research",
       "date": "December 5, 2025",
-      "author": "Dheeraj Chintapalli, Rikhil Tanugula, Sunkalp Chandra",
+      "author": "Reteena Team",
       "image": "image/lark.png",
       "toc": [
-        { "id": "concept", "title": "The Concept" },
-        { "id": "architecture", "title": "Architecture" },
-        { "id": "applications", "title": "Applications" }
+        {
+          "id": "concept",
+          "title": "The Concept"
+        },
+        {
+          "id": "architecture",
+          "title": "Architecture"
+        },
+        {
+          "id": "applications",
+          "title": "Applications"
+        }
       ],
       "content": [
-        { "type": "heading", "id": "concept", "text": "The Concept" },
-        { "type": "paragraph", "text": "Complex decisions in healthcare, policy, and organizational contexts invariably involve multiple stakeholders with legitimately different priorities and perspectives. Traditional decision-making approaches either aggregate these perspectives through voting or consensus mechanisms that can obscure important considerations, or defer to single decision-makers whose individual perspective may miss critical factors. Recent advances in large language models offer new possibilities for decision support, but naive application of LLMs to multi-stakeholder scenarios often produces recommendations that favor certain perspectives while marginalizing others, or generate plausible-sounding but poorly-grounded suggestions." },
-        { "type": "paragraph", "text": "Lark addresses these challenges through a biologically inspired framework where multiple LLM-based agents, each representing different stakeholder perspectives, engage in an evolutionary process of proposal generation, evaluation, and refinement. This approach draws inspiration from neural development, where network architectures are refined through experience-dependent plasticity and pruning, and from ecological models, where diverse populations adapt to complex environments through variation and selection. By modeling stakeholder diversity and using evolutionary dynamics to refine decision strategies, Lark generates recommendations that better balance competing interests while maintaining transparency about trade-offs." },
-        { "type": "heading", "id": "architecture", "text": "Architecture" },
-        { "type": "paragraph", "text": "The Lark framework implements several key mechanisms inspired by biological systems. Plasticity allows individual agents to dynamically refine their decision strategies based on feedback and observed outcomes, adapting their reasoning patterns while maintaining their core stakeholder perspective. Duplication and maturation create populations of related agents that explore variations on promising strategies, much like neural circuits naturally develop through proliferation and specialization of different cell types. This generates valuable diversity in approaches while maintaining coherence within stakeholder perspectives." },
-        { "type": "paragraph", "text": "Ranked-choice aggregation collects and synthesizes proposals from all agents using advanced voting mechanisms that explicitly respect preference intensity rather than simple majorities, ensuring minority perspectives remain visible in final recommendations, even when not selected. Compute-aware optimization balances the number of agents, iteration depth, and proposal complexity against available computational resources, allowing the framework to scale efficiently from quick preliminary analyses to deep explorations of complex decision spaces. Throughout the entire process, the system maintains clear interpretability by carefully tracking which stakeholders favor which proposals and the reasoning behind their preferences." },
-        { "type": "heading", "id": "applications", "text": "Applications" },
-        { "type": "paragraph", "text": "Presented at NeurIPS Workshop 2025, our work demonstrates Lark’s capabilities across several challenging multi-stakeholder scenarios. In healthcare resource allocation, the system balanced patient care quality, cost constraints, staff workload, and equity considerations to generate allocation strategies superior to those produced by single-perspective optimization or simple voting among stakeholders. In organizational restructuring, Lark synthesized perspectives from different departments and levels to identify approaches that achieved efficiency gains while maintaining institutional knowledge and employee satisfaction." },
-        { "type": "paragraph", "text": "The framework’s transparency proved particularly valuable, as stakeholders could understand not just the final recommendations but also how their concerns were weighted against competing considerations and trade-offs occurred. This visibility into the decision process increased stakeholder buy-in and trust in the recommendations. Ongoing work explores applications in policy development, clinical trial design, and other domains where successful outcomes require balancing competing priorities in principled, transparent ways." }
+        {
+          "type": "heading",
+          "id": "concept",
+          "text": "The Concept"
+        },
+        {
+          "type": "paragraph",
+          "text": "Complex decisions in healthcare, policy, and organizational contexts invariably involve multiple stakeholders with legitimately different priorities and perspectives. Traditional decision-making approaches either aggregate these perspectives through voting or consensus mechanisms that can obscure important considerations, or defer to single decision-makers whose individual perspective may miss critical factors. Recent advances in large language models offer new possibilities for decision support, but naive application of LLMs to multi-stakeholder scenarios often produces recommendations that favor certain perspectives while marginalizing others, or generate plausible-sounding but poorly-grounded suggestions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Lark addresses these challenges through a biologically inspired framework where multiple LLM-based agents, each representing different stakeholder perspectives, engage in an evolutionary process of proposal generation, evaluation, and refinement. This approach draws inspiration from neural development, where network architectures are refined through experience-dependent plasticity and pruning, and from ecological models, where diverse populations adapt to complex environments through variation and selection. By modeling stakeholder diversity and using evolutionary dynamics to refine decision strategies, Lark generates recommendations that better balance competing interests while maintaining transparency about trade-offs."
+        },
+        {
+          "type": "heading",
+          "id": "architecture",
+          "text": "Architecture"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Lark framework implements several key mechanisms inspired by biological systems. Plasticity allows individual agents to dynamically refine their decision strategies based on feedback and observed outcomes, adapting their reasoning patterns while maintaining their core stakeholder perspective. Duplication and maturation create populations of related agents that explore variations on promising strategies, much like neural circuits naturally develop through proliferation and specialization of different cell types. This generates valuable diversity in approaches while maintaining coherence within stakeholder perspectives."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ranked-choice aggregation collects and synthesizes proposals from all agents using advanced voting mechanisms that explicitly respect preference intensity rather than simple majorities, ensuring minority perspectives remain visible in final recommendations, even when not selected. Compute-aware optimization balances the number of agents, iteration depth, and proposal complexity against available computational resources, allowing the framework to scale efficiently from quick preliminary analyses to deep explorations of complex decision spaces. Throughout the entire process, the system maintains clear interpretability by carefully tracking which stakeholders favor which proposals and the reasoning behind their preferences."
+        },
+        {
+          "type": "heading",
+          "id": "applications",
+          "text": "Applications"
+        },
+        {
+          "type": "paragraph",
+          "text": "Presented at NeurIPS Workshop 2025, our work demonstrates Lark\u2019s capabilities across several challenging multi-stakeholder scenarios. In healthcare resource allocation, the system balanced patient care quality, cost constraints, staff workload, and equity considerations to generate allocation strategies superior to those produced by single-perspective optimization or simple voting among stakeholders. In organizational restructuring, Lark synthesized perspectives from different departments and levels to identify approaches that achieved efficiency gains while maintaining institutional knowledge and employee satisfaction."
+        },
+        {
+          "type": "paragraph",
+          "text": "The framework\u2019s transparency proved particularly valuable, as stakeholders could understand not just the final recommendations but also how their concerns were weighted against competing considerations and trade-offs occurred. This visibility into the decision process increased stakeholder buy-in and trust in the recommendations. Ongoing work explores applications in policy development, clinical trial design, and other domains where successful outcomes require balancing competing priorities in principled, transparent ways."
+        }
       ]
     },
     {
@@ -83,24 +134,66 @@
       "description": "A biologically inspired framework combining LLM reasoning with stakeholder aware multi agent systems",
       "category": "research",
       "date": "January 20, 2025",
-      "author": "Sunkalp Chandra, Gautham Korrapati",
+      "author": "Reteena Team",
       "image": "image/geneattentionnet.png",
       "toc": [
-        { "id": "motivation", "title": "Motivation" },
-        { "id": "innovation", "title": "Innovation" },
-        { "id": "future", "title": "Future Directions" }
+        {
+          "id": "motivation",
+          "title": "Motivation"
+        },
+        {
+          "id": "innovation",
+          "title": "Innovation"
+        },
+        {
+          "id": "future",
+          "title": "Future Directions"
+        }
       ],
       "content": [
-        { "type": "heading", "id": "motivation", "text": "Motivation" },
-        { "type": "paragraph", "text": "Gene expression data offers rich information about disease states, capturing the molecular signatures that distinguish healthy from diseased tissue at the transcriptomic level. However, traditional machine learning approaches to disease classification from gene expression often treat genes as independent features, applying standard classification algorithms to high-dimensional vectors of expression values. This approach ignores the fundamental biological reality that genes do not function in isolation but rather as components of complex regulatory networks, signaling pathways, and protein interaction complexes." },
-        { "type": "paragraph", "text": "This biological structure is not merely an interesting detail but contains critical information for understanding disease mechanisms and building robust classifiers. Genes in the same pathway tend to be co-regulated, and their combined expression pattern is more informative than individual measurements. Protein-protein interactions create functional modules where disruption of any component can have similar downstream effects. Transcription factor networks create hierarchical regulatory structures where changes in master regulators cascade through genes. Ignoring this structure discards valuable information and builds models that may perform well through dataset-specific patterns rather than true biological understanding." },
-        { "type": "heading", "id": "innovation", "text": "Innovation" },
-        { "type": "paragraph", "text": "GeneAttentionNet addresses these limitations through a neural architecture designed to respect biological structure. Attention-based tokenization groups genes into functional units based on pathway membership, allowing the network to learn representations at the pathway level rather than treating each gene independently. This reduces dimensionality in a biologically meaningful way, grouping related genes while maintaining the ability to identify which specific genes within a pathway are most important for classification." },
-        { "type": "paragraph", "text": "Pathway gating mechanisms allow the network to dynamically up-weight or down-weight entire biological pathways based on their relevance to the classification task, effectively learning which cellular processes are most disrupted in disease. Protein-interaction-masked attention heads incorporate known protein-protein interaction networks into the attention mechanism, explicitly encouraging the model to attend to genes whose protein products physically interact and function together. This structural prior guides the network toward biologically plausible patterns of gene co-expression while still allowing it to learn from observed data." },
-        { "type": "paragraph", "text": "The result is a model that not only achieves higher classification accuracy than baseline approaches but also provides interpretable insights into disease mechanisms. By examining which pathways receive high gate values and which protein interaction modules show strong attention patterns, researchers can identify biological processes central to disease pathology. This interpretability is crucial for clinical adoption, as it allows professionals to understand and validate the model’s reasoning rather than treating it as a black box." },
-        { "type": "heading", "id": "future", "text": "Future Directions" },
-        { "type": "paragraph", "text": "Presented at MIT URTC 2025, this work opens several directions for future research. The architecture can be extended to multi-task learning where related diseases or disease stages are predicted simultaneously, leveraging shared pathway disruptions while identifying disease-specific signatures. Integration with other data modalities such as clinical measurements, neuroimaging, or proteomic data could create more comprehensive disease models. Application to other neurodegenerative diseases beyond Alzheimer's, or to other disease domains entirely, would test the generalizability of biologically-informed architecture design." },
-        { "type": "paragraph", "text": "Perhaps most importantly, the framework demonstrates that incorporating biological knowledge into neural network architectures, rather than relying solely on end-to-end learning from data, can improve performance and interpretability. This principle has broad applicability across biomedical machine learning, suggesting that the most powerful models will be those that thoughtfully combine domain expertise with data-driven learning rather than treating biological knowledge and machine learning as separate paradigms." }
+        {
+          "type": "heading",
+          "id": "motivation",
+          "text": "Motivation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Gene expression data offers rich information about disease states, capturing the molecular signatures that distinguish healthy from diseased tissue at the transcriptomic level. However, traditional machine learning approaches to disease classification from gene expression often treat genes as independent features, applying standard classification algorithms to high-dimensional vectors of expression values. This approach ignores the fundamental biological reality that genes do not function in isolation but rather as components of complex regulatory networks, signaling pathways, and protein interaction complexes."
+        },
+        {
+          "type": "paragraph",
+          "text": "This biological structure is not merely an interesting detail but contains critical information for understanding disease mechanisms and building robust classifiers. Genes in the same pathway tend to be co-regulated, and their combined expression pattern is more informative than individual measurements. Protein-protein interactions create functional modules where disruption of any component can have similar downstream effects. Transcription factor networks create hierarchical regulatory structures where changes in master regulators cascade through genes. Ignoring this structure discards valuable information and builds models that may perform well through dataset-specific patterns rather than true biological understanding."
+        },
+        {
+          "type": "heading",
+          "id": "innovation",
+          "text": "Innovation"
+        },
+        {
+          "type": "paragraph",
+          "text": "GeneAttentionNet addresses these limitations through a neural architecture designed to respect biological structure. Attention-based tokenization groups genes into functional units based on pathway membership, allowing the network to learn representations at the pathway level rather than treating each gene independently. This reduces dimensionality in a biologically meaningful way, grouping related genes while maintaining the ability to identify which specific genes within a pathway are most important for classification."
+        },
+        {
+          "type": "paragraph",
+          "text": "Pathway gating mechanisms allow the network to dynamically up-weight or down-weight entire biological pathways based on their relevance to the classification task, effectively learning which cellular processes are most disrupted in disease. Protein-interaction-masked attention heads incorporate known protein-protein interaction networks into the attention mechanism, explicitly encouraging the model to attend to genes whose protein products physically interact and function together. This structural prior guides the network toward biologically plausible patterns of gene co-expression while still allowing it to learn from observed data."
+        },
+        {
+          "type": "paragraph",
+          "text": "The result is a model that not only achieves higher classification accuracy than baseline approaches but also provides interpretable insights into disease mechanisms. By examining which pathways receive high gate values and which protein interaction modules show strong attention patterns, researchers can identify biological processes central to disease pathology. This interpretability is crucial for clinical adoption, as it allows professionals to understand and validate the model\u2019s reasoning rather than treating it as a black box."
+        },
+        {
+          "type": "heading",
+          "id": "future",
+          "text": "Future Directions"
+        },
+        {
+          "type": "paragraph",
+          "text": "Presented at MIT URTC 2025, this work opens several directions for future research. The architecture can be extended to multi-task learning where related diseases or disease stages are predicted simultaneously, leveraging shared pathway disruptions while identifying disease-specific signatures. Integration with other data modalities such as clinical measurements, neuroimaging, or proteomic data could create more comprehensive disease models. Application to other neurodegenerative diseases beyond Alzheimer's, or to other disease domains entirely, would test the generalizability of biologically-informed architecture design."
+        },
+        {
+          "type": "paragraph",
+          "text": "Perhaps most importantly, the framework demonstrates that incorporating biological knowledge into neural network architectures, rather than relying solely on end-to-end learning from data, can improve performance and interpretability. This principle has broad applicability across biomedical machine learning, suggesting that the most powerful models will be those that thoughtfully combine domain expertise with data-driven learning rather than treating biological knowledge and machine learning as separate paradigms."
+        }
       ]
     },
     {
@@ -109,24 +202,66 @@
       "description": "A biologically grounded framework modeling cortical microcircuits linking spiking simulations with brain data",
       "category": "research",
       "date": "November 1, 2025",
-      "author": "Sunkalp Chandra, Gautham Korrapati, Dheeraj Chintapalli, S. Yang, Saketh Satti, Jainish Patel",
+      "author": "Reteena Team",
       "image": "image/cortiforge.png",
       "toc": [
-        { "id": "background", "title": "Background" },
-        { "id": "framework", "title": "The Framework" },
-        { "id": "impact", "title": "Research Impact" }
+        {
+          "id": "background",
+          "title": "Background"
+        },
+        {
+          "id": "framework",
+          "title": "The Framework"
+        },
+        {
+          "id": "impact",
+          "title": "Research Impact"
+        }
       ],
       "content": [
-        { "type": "heading", "id": "background", "text": "Background" },
-        { "type": "paragraph", "text": "Understanding cortical microcircuits—the local networks of neurons that implement computation in the brain—represents one of the central challenges in neuroscience. While we have increasingly detailed experimental data about cortical structure and function from techniques like electron microscopy, electrophysiology, and calcium imaging, translating this wealth of data into mechanistic understanding requires computational models that can bridge levels of description from individual neurons to network behavior. Existing tools for cortical modeling often fall into two camps: highly detailed biophysical simulators that capture neuronal properties with great fidelity but require extensive expertise and computational resources, or simplified network models that are more accessible but sacrifice biological realism." },
-        { "type": "paragraph", "text": "This gap between detailed data and accessible modeling tools slows scientific progress and creates barriers to reproducibility. Different research groups implement cortical circuit models using different tools, making it difficult to compare results or build on prior work. The expertise required to construct biologically realistic models limits the pool of researchers who can engage in circuit modeling. The lack of standardized workflows for incorporating experimental data means that models often diverge from empirical findings or fail to take advantage of the rich datasets now available from initiatives like the Allen Brain Atlas." },
-        { "type": "heading", "id": "framework", "text": "The Framework" },
-        { "type": "paragraph", "text": "CortiForge addresses these challenges by providing an integrated framework that combines standardized neuron and synapse libraries with experimental data integration and end-to-end modeling workflows. The libraries provide validated implementations of cortical neuron types with biophysically realistic properties, allowing researchers to build models using well-characterized components rather than implementing from scratch. They draw on extensive experimental characterization of cortical cell types, incorporating realistic morphologies, ion channel distributions, and synaptic properties from empirical measurements." },
-        { "type": "paragraph", "text": "Integration with the Allen Institute’s SDK enables seamless incorporation of experimental data on cell type distributions, connectivity patterns, and physiological properties from comprehensive cortical characterization. Researchers can query the Allen databases to obtain realistic parameters for their models, ensuring simulated circuits reflect cortical organization. The framework handles technical complexity of data extraction and format conversion, allowing neuroscientists to focus on questions rather than data wrangling." },
-        { "type": "paragraph", "text": "The end-to-end workflow guides users from circuit specification through simulation to analysis and validation against experimental data. Built-in analysis tools compute standard metrics for assessing circuit behavior such as firing rate distributions, oscillatory dynamics, and response properties, facilitating comparison between model predictions and experimental observations. Visualization tools help researchers explore model behavior and identify interesting phenomena. The framework's modular design allows researchers to customize components while maintaining compatibility with the broader ecosystem." },
-        { "type": "heading", "id": "impact", "text": "Research Impact" },
-        { "type": "paragraph", "text": "Submitted to ICLR 2026, CortiForge represents our commitment to open, reproducible neuroscience. By reducing the barriers to cortical circuit modeling, we hope to expand the community of researchers who can engage in mechanistic modeling and increase the pace of discovery. The framework's emphasis on experimental data integration encourages models that are constrained by and validated against empirical findings, promoting a tight coupling between theory and experiment that is essential for scientific progress." },
-        { "type": "paragraph", "text": "The standardized components and workflows facilitate reproducibility by ensuring that circuit models can be precisely specified and shared between research groups. The open-source nature of the framework encourages community contribution, with researchers able to extend the neuron libraries, add new analysis tools, or integrate additional data sources. As the framework matures and gains adoption, we envision it becoming a common platform for cortical modeling research, enabling meta-analyses across studies and accelerating the translation of modeling insights into testable experimental predictions." }
+        {
+          "type": "heading",
+          "id": "background",
+          "text": "Background"
+        },
+        {
+          "type": "paragraph",
+          "text": "Understanding cortical microcircuits\u2014the local networks of neurons that implement computation in the brain\u2014represents one of the central challenges in neuroscience. While we have increasingly detailed experimental data about cortical structure and function from techniques like electron microscopy, electrophysiology, and calcium imaging, translating this wealth of data into mechanistic understanding requires computational models that can bridge levels of description from individual neurons to network behavior. Existing tools for cortical modeling often fall into two camps: highly detailed biophysical simulators that capture neuronal properties with great fidelity but require extensive expertise and computational resources, or simplified network models that are more accessible but sacrifice biological realism."
+        },
+        {
+          "type": "paragraph",
+          "text": "This gap between detailed data and accessible modeling tools slows scientific progress and creates barriers to reproducibility. Different research groups implement cortical circuit models using different tools, making it difficult to compare results or build on prior work. The expertise required to construct biologically realistic models limits the pool of researchers who can engage in circuit modeling. The lack of standardized workflows for incorporating experimental data means that models often diverge from empirical findings or fail to take advantage of the rich datasets now available from initiatives like the Allen Brain Atlas."
+        },
+        {
+          "type": "heading",
+          "id": "framework",
+          "text": "The Framework"
+        },
+        {
+          "type": "paragraph",
+          "text": "CortiForge addresses these challenges by providing an integrated framework that combines standardized neuron and synapse libraries with experimental data integration and end-to-end modeling workflows. The libraries provide validated implementations of cortical neuron types with biophysically realistic properties, allowing researchers to build models using well-characterized components rather than implementing from scratch. They draw on extensive experimental characterization of cortical cell types, incorporating realistic morphologies, ion channel distributions, and synaptic properties from empirical measurements."
+        },
+        {
+          "type": "paragraph",
+          "text": "Integration with the Allen Institute\u2019s SDK enables seamless incorporation of experimental data on cell type distributions, connectivity patterns, and physiological properties from comprehensive cortical characterization. Researchers can query the Allen databases to obtain realistic parameters for their models, ensuring simulated circuits reflect cortical organization. The framework handles technical complexity of data extraction and format conversion, allowing neuroscientists to focus on questions rather than data wrangling."
+        },
+        {
+          "type": "paragraph",
+          "text": "The end-to-end workflow guides users from circuit specification through simulation to analysis and validation against experimental data. Built-in analysis tools compute standard metrics for assessing circuit behavior such as firing rate distributions, oscillatory dynamics, and response properties, facilitating comparison between model predictions and experimental observations. Visualization tools help researchers explore model behavior and identify interesting phenomena. The framework's modular design allows researchers to customize components while maintaining compatibility with the broader ecosystem."
+        },
+        {
+          "type": "heading",
+          "id": "impact",
+          "text": "Research Impact"
+        },
+        {
+          "type": "paragraph",
+          "text": "Submitted to ICLR 2026, CortiForge represents our commitment to open, reproducible neuroscience. By reducing the barriers to cortical circuit modeling, we hope to expand the community of researchers who can engage in mechanistic modeling and increase the pace of discovery. The framework's emphasis on experimental data integration encourages models that are constrained by and validated against empirical findings, promoting a tight coupling between theory and experiment that is essential for scientific progress."
+        },
+        {
+          "type": "paragraph",
+          "text": "The standardized components and workflows facilitate reproducibility by ensuring that circuit models can be precisely specified and shared between research groups. The open-source nature of the framework encourages community contribution, with researchers able to extend the neuron libraries, add new analysis tools, or integrate additional data sources. As the framework matures and gains adoption, we envision it becoming a common platform for cortical modeling research, enabling meta-analyses across studies and accelerating the translation of modeling insights into testable experimental predictions."
+        }
       ]
     }
   ]

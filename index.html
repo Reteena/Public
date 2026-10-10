@@ -28,32 +28,9 @@
         </div>
         <div class="header-content">
           <a href="/" class="logo" style="text-decoration: none; color: #000;">Reteena</a>
-          <div class="header-spacer"></div>
-          <button class="burger-menu" id="burger-menu" aria-label="Menu">
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-          </button>
         </div>
       </div>
     </header>
-
-    <!-- Fullscreen Menu Overlay -->
-    <div class="menu-overlay" id="menu-overlay">
-      <button class="menu-close" id="menu-close" aria-label="Close menu">
-        <span class="close-line"></span>
-        <span class="close-line"></span>
-      </button>
-      <nav class="menu-nav">
-        <div class="menu-item">
-          <a href="/blog" class="menu-link">Blog</a>
-          <div class="menu-divider"></div>
-        </div>
-        <div class="menu-item">
-          <a href="mailto:hello@reteena.org" class="menu-link">Contact</a>
-          <div class="menu-divider"></div>
-        </div>
-      </nav>
-    </div>
 
     <main>
       <!-- Hero Section - Visible on Load -->
@@ -62,55 +39,33 @@
         <div class="hero-content">
           <h1 id="hero-title" class="hero-brand">Reteena</h1>
           <p class="hero-tagline">For a better brain &amp; mind.</p>
-          <a class="hero-cta" href="#remembrance">Explore our research</a>
+          <a class="hero-cta" href="#low-field-mri">Explore our research</a>
         </div>
       </section>
 
       <!-- Content Section - Visible on Scroll -->
       <section class="content-section">
         <section class="intro scroll-fade">
-          <p class="subtitle">Reteena is an applied AI lab developing multimodal<br> neurodegenerative diagnostic models with high computational efficiency.</p>
+          <p class="subtitle">Reteena is an applied AI community developing multimodal<br> neurodegenerative diagnostic models with high computational efficiency.</p>
         </section>
-
-        <div class="project-card">
-          <hr class="divider" />
-          <section class="project scroll-fade" id="remembrance">
-            <img src="image/image1.png" alt="Remembrance project illustration">
-
-            <span class="project-index">01</span>
-            <div class="project-meta">
-              <span class="project-title">Remembrance</span>
-              <span class="project-collaboration">Private Beta Scheduled for Launch</span>
-            </div>
-
-            <p class="project-description">
-              Remembrance is an emotionally intelligent AI memory companion for Alzheimer's patients that delivers reminiscence therapy through natural conversations. By storing memories in interconnected knowledge graphs that mirror how human memory actually works, Remembrance helps patients maintain their sense of identity and connection to their life stories even as cognitive decline progresses.
-            </p>
-
-            <div class="project-footer">
-              <span class="project-link"><i class="fa-solid fa-link"></i>Seungyong Yang, Sunkalp Chandra, Gautham Korrapati, Dheeraj Chintapalli, Jainish Patel, Noah Small </span>
-              <span class="project-tags"><i class="fa-solid fa-tags"></i> AI, Healthcare, Memory</span>
-            </div>
-          </section>
-        </div>
 
         <div class="project-card">
           <hr class="divider" />
           <section class="project scroll-fade" id="low-field-mri">
             <img src="image/image2.png" alt="Low Field MRI Framework project illustration">
 
-            <span class="project-index">02</span>
+            <span class="project-index">01</span>
             <div class="project-meta">
               <span class="project-title">Low Field MRI Framework</span>
               <span class="project-collaboration">IEEE BigData 2024 Publication</span>
             </div>
 
             <p class="project-description">
-              Enhances low-field MRI scans for Alzheimer's diagnosis using deep learning-based brain segmentation and volumetric analysis. By enabling 96% diagnostic accuracy on affordable, low-strength scanners, the framework provides a faster, cost-effective alternative to conventional high-field MRI while preserving clinically meaningful structural information for early and accessible neurodegenerative assessment.
+              A deep learning pipeline that turns affordable low-field MRI into clinically useful Alzheimer's assessment. Brain segmentation and volumetric analysis recover structural signals that cheaper scanners often lose, reaching 96% diagnostic accuracy and making early neuroimaging practical beyond high-field imaging centers.
             </p>
 
             <div class="project-footer">
-              <span class="project-link"><i class="fa-solid fa-link"></i>Aarav Minocha, Ivan Ma, Jainish Patel, Seungyong Yang</span>
+              <span class="project-link"><i class="fa-solid fa-link"></i>IEEE BigData 2024</span>
               <span class="project-tags"><i class="fa-solid fa-tags"></i> Deep Learning, Neuroimaging, Open Source</span>
             </div>
           </section>
@@ -121,18 +76,18 @@
           <section class="project scroll-fade" id="lark">
             <img src="image/image3.png" alt="Lark Multi-Stakeholder LLM Agents project illustration">
 
-            <span class="project-index">03</span>
+            <span class="project-index">02</span>
             <div class="project-meta">
               <span class="project-title">Lark Multi-Stakeholder LLM Agents</span>
               <span class="project-collaboration">NeurIPS Workshop 2025 Publication</span>
             </div>
 
             <p class="project-description">
-              Lark is a biologically inspired decision-making framework that combines LLM-based reasoning with an evolutionary, stakeholder-aware multi-agent system. Through plasticity, duplication and maturation, ranked-choice aggregation, and compute-aware optimization, Lark generates concise, aligned strategies while balancing stakeholder trade-offs, performance, and computational cost across decision cycles.
+              Lark is a biologically inspired decision-making framework that pairs LLM reasoning with an evolutionary, stakeholder-aware multi-agent system. Plasticity, duplication and maturation, ranked-choice aggregation, and compute-aware optimization produce concise strategies that balance competing priorities without collapsing into a single viewpoint.
             </p>
 
             <div class="project-footer">
-              <span class="project-link"><i class="fa-solid fa-link"></i> Dheeraj Chintapalli, Rikhil Tanugula, Sunkalp Chandra</span>
+              <span class="project-link"><i class="fa-solid fa-link"></i>NeurIPS Workshop 2025</span>
               <span class="project-tags"><i class="fa-solid fa-tags"></i> Multi-Agent Systems, LLM, Decision Making</span>
             </div>
           </section>
@@ -140,22 +95,66 @@
 
         <div class="project-card">
           <hr class="divider" />
-          <section class="project scroll-fade">
+          <section class="project scroll-fade" id="geneattentionnet">
             <img src="image/image4.png" alt="GeneAttentionNet project illustration">
 
-            <span class="project-index">04</span>
+            <span class="project-index">03</span>
             <div class="project-meta">
               <span class="project-title">GeneAttentionNet</span>
               <span class="project-collaboration">MIT URTC 2025 Presentation, Preprint</span>
             </div>
 
             <p class="project-description">
-              GeneAttentionNet is a biologically informed neural architecture for Alzheimer's disease classification using gene expression data. By combining attention-based tokenization, pathway gating, and protein–interaction–masked heads, it captures gene-level context, improves accuracy over baseline models, and enables trustworthy, mechanism-aware predictions for transcriptomic disease modeling and biomedical research.
+              A pathway-aware architecture for Alzheimer's classification from gene expression. Attention tokenization, pathway gating, and protein-interaction-masked heads let the model reason over biological structure rather than isolated genes, improving accuracy while keeping predictions interpretable for transcriptomic research.
             </p>
 
             <div class="project-footer">
-              <span class="project-link"><i class="fa-solid fa-link"></i> Sunkalp Chandra, Gautham Korrapati</span>
+              <span class="project-link"><i class="fa-solid fa-link"></i>MIT URTC 2025</span>
               <span class="project-tags"><i class="fa-solid fa-tags"></i> Genomics, Attention, Machine Learning</span>
+            </div>
+          </section>
+        </div>
+
+        <div class="project-card">
+          <hr class="divider" />
+          <section class="project scroll-fade" id="nrdo">
+            <img src="image/image1.png" alt="NRDO project illustration">
+
+            <span class="project-index">04</span>
+            <div class="project-meta">
+              <span class="project-title">NRDO</span>
+              <span class="project-collaboration">OpenReview Preprint</span>
+            </div>
+
+            <p class="project-description">
+              Neural Reaction-Diffusion Operators learn solution operators for spatially heterogeneous reaction-diffusion PDEs in tumor modeling. Heterogeneity-aware architectures, adaptive spectral convolutions, and physics-informed training deliver real-time simulation with orders-of-magnitude speedup over classical solvers, supporting treatment planning and drug-delivery optimization.
+            </p>
+
+            <div class="project-footer">
+              <a class="project-link" href="https://openreview.net/forum?id=05dkGJ3rVO" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i>OpenReview</a>
+              <span class="project-tags"><i class="fa-solid fa-tags"></i> Neural Operators, Computational Biology, PDEs</span>
+            </div>
+          </section>
+        </div>
+
+        <div class="project-card">
+          <hr class="divider" />
+          <section class="project scroll-fade" id="trident">
+            <img src="image/cortiforge.png" alt="TRIDENT neural decoding project illustration">
+
+            <span class="project-index">05</span>
+            <div class="project-meta">
+              <span class="project-title">TRIDENT</span>
+              <span class="project-collaboration">Next Project — In Progress</span>
+            </div>
+
+            <p class="project-description">
+              TRIDENT is our next research direction: neural decoding that maps brain signals into structured, clinically meaningful representations. The goal is to read out cognitive and neurodegenerative markers from neural activity with models that are accurate, efficient, and built for real diagnostic workflows—bridging measurement and interpretation in the brain.
+            </p>
+
+            <div class="project-footer">
+              <span class="project-link"><i class="fa-solid fa-link"></i>Neural Decoding</span>
+              <span class="project-tags"><i class="fa-solid fa-tags"></i> Neural Decoding, Brain Signals, Diagnostics</span>
             </div>
           </section>
         </div>
@@ -171,7 +170,7 @@
               <div class="footer-column">
                 <h3 class="footer-column-header">Company</h3>
                 <a href="/" class="footer-link">Home</a>
-                <a href="/blog" class="footer-link">Blog</a>
+                <a href="mailto:hello@reteena.org" class="footer-link">Contact</a>
               </div>
 
               <div class="footer-column">
@@ -206,40 +205,6 @@
       } else {
         header.classList.remove('scrolled');
       }
-    });
-
-    // Burger menu functionality
-    document.addEventListener('DOMContentLoaded', () => {
-      const burgerMenu = document.getElementById('burger-menu');
-      const menuOverlay = document.getElementById('menu-overlay');
-      const menuClose = document.getElementById('menu-close');
-
-      function openMenu() {
-        menuOverlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
-
-      function closeMenu() {
-        menuOverlay.classList.remove('active');
-        document.body.style.overflow = '';
-      }
-
-      burgerMenu.addEventListener('click', openMenu);
-      menuClose.addEventListener('click', closeMenu);
-
-      // Close menu when clicking outside
-      menuOverlay.addEventListener('click', (e) => {
-        if (e.target === menuOverlay) {
-          closeMenu();
-        }
-      });
-
-      // Close menu with Escape key
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && menuOverlay.classList.contains('active')) {
-          closeMenu();
-        }
-      });
     });
 
     // Scroll animation observer
